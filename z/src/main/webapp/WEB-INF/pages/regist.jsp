@@ -23,6 +23,10 @@
 			position:relative;
 			color:white;
 		}
+		#registerForm input[type="password"]{
+			background: rgba(114,125,135,0.3);
+			font-size: 12px;
+		}
 	</style>
 	<script>
 		var flagSize = 0;
@@ -51,13 +55,16 @@
 
             $("#registerForm").submit(function () {
                 if(flagSize==6){
-                    alert("true");
                     var data = $(this).serialize();
-                    $.post("user/regist",data,function (data) {
-
+                    $.post("${pageContext.request.contextPath}/user/regist",data,function (info) {
+						if(info.status=="NORMAL"){
+						    alert(info.description);
+						    window.location.href = "${pageContext.request.contextPath}/index.jsp";
+						}else{
+                            alert(info.description);
+						}
                     });
-				}
-				alert("false");
+				};
             });
 
         });
@@ -94,7 +101,7 @@
 						<span class="font-Hall font-weight-700 letter-spaceing-top">Only By Learn</span>
 						<span class="font-Playfair font-weight-700 letter-spaceing-top"></span>
 					</p>
-					<p class="font-weight-700 datetime">未登录</p>
+					<p class="font-weight-700 datetime" id="loginStatus">未登录</p>
 				</div>
 				<div class="flat-action flat-text-right style1">
 					<ul>
@@ -112,7 +119,7 @@
 	<div class="container">
 		<div class="header-wrap clearfix">
 			<div id="logo">
-				<a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" data-retina="images/logo/logo@2x.png" data-width="157" data-height="29"></a>
+				<a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" ></a>
 			</div>
 			<div class="nav-wrap flat-text-right style1">
 				<nav id="main-nav">
@@ -331,7 +338,7 @@
 				<div class="col-md-4">
 					<div class="widget-about">
 						<div id="logo-ft">
-							<a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" data-retina="images/logo/logo-ft@2x.png" data-width="157" data-height="29"></a>
+							<a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" ></a>
 						</div>
 						<p class="description">一个个人网站，记录日常学习的东西。包括但不限于计算机语言、读书笔记</p>
 						<div class="list-info">

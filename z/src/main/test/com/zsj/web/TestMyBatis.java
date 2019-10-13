@@ -1,6 +1,8 @@
-package com.zsj;
+package com.zsj.web;
 
+import com.zsj.controller.ChooseQuestionController;
 import com.zsj.dao.UserDao;
+import com.zsj.domain.Problem;
 import com.zsj.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -25,5 +27,13 @@ public class TestMyBatis {
         List<User> all = userDao.findAll();
         System.out.println(all);
 
+    }
+
+
+    @Test
+    public void test1(){
+        ChooseQuestionController cqc = new ChooseQuestionController();
+        List<Problem> problems = cqc.selectQuestions("", 1, 5, false);
+        System.out.println(problems);
     }
 }

@@ -1,63 +1,83 @@
-﻿<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+﻿<%@ page import="com.zsj.domain.User" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="utf-8">
 <title>登录</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/bootstrap.css" >
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/style.css">  <!-- 主要美化文件 -->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/responsive.css">
 	
 	
-	<script src="${pageContext.request.contextPath}/javascript/jquery-3.3.1.js"></script>
-	<script src="${pageContext.request.contextPath}/javascript/owl.carousel.min.js"></script>      <!-- form表单动态设计 -->
-	<script src="${pageContext.request.contextPath}/javascript/main.js"></script>
 
+
+	<%
+		User user = (User)request.getSession().getAttribute("user");
+		boolean flag;
+		flag = user==null?false:true;
+//		String info = "未登录";
+//		if(flag){
+//		    info = user.getUsername();
+//		}else{
+//		    info = "未登录";
+//		}
+	%>
 
 
 
 
 </head>
 
-<body>
-	<div class="top border-bt-d1d1ff style2">
-	<div class="overlay"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-12">
-				<div class="flat-info">
-					<ul>
-						<li class="phone"><a href="#" id="ttt">15086998051</a></li>
-						<li class="mail"><a href="#">313434726@qq.com</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-12 pd-left-0">
-				<div class="flat-adds flat-text-right">
-					<p>
-						<span class="font-Roboto font-weight-700 underline-text"></span>
-						<span class="font-Hall font-weight-700 letter-spaceing-top">Only By Learn</span>
-						<span class="font-Playfair font-weight-700 letter-spaceing-top"></span>
-					</p>
-					<p class="font-weight-700 datetime">未登录</p>
-				</div>
-				<div class="flat-action flat-text-right style1">
-					<ul>
-						<li><a href="${pageContext.request.contextPath}/pages/regist">注册</a></li>
-						<li><a href="${pageContext.request.contextPath}/pages/login">登录</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+<body class="bg-body2">
+    <div class="boxed">
+        <div class="preloader">
+                <span class="loader">
+                    <span class="loader-inner"></span>
+                </span>
+        </div>
+	    <div class="top border-bt-d1d1ff style2">
+	    <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="flat-info">
+                        <ul>
+                            <li class="phone"><a href="#" id="ttt">15086998051</a></li>
+                            <li class="mail"><a href="#">313434726@qq.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 pd-left-0">
+                    <div class="flat-adds flat-text-right">
+                        <p>
+                            <span class="font-Roboto font-weight-700 underline-text"></span>
+                            <span class="font-Hall font-weight-700 letter-spaceing-top">Only By Learn</span>
+                            <span class="font-Playfair font-weight-700 letter-spaceing-top"></span>
+                        </p>
+                        <p class="font-weight-700 datetime" id="loginStatus">未登录</p>
+                    </div>
+                    <div class="flat-action flat-text-right style1">
+                        <ul>
+                            <li><a href="${pageContext.request.contextPath}/pages/regist">注册</a></li>
+                            <li><a href="${pageContext.request.contextPath}/pages/login" id="login">登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</div>
+    </div>
 
-	<div id="header" class="bg-fff style1">
-	<div class="container">
+	    <div id="header" class="bg-fff style1">
+	        <div class="container">
 		<div class="header-wrap clearfix">
 			<div id="logo">
-				<a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" data-retina="images/logo/logo@2x.png" data-width="157" data-height="29"></a>
+				<a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" ></a>
 			</div>
 			<div class="nav-wrap flat-text-right style1">
 				<nav id="main-nav">
@@ -137,8 +157,8 @@
 			</div>
 		</div>
 	</div>
-</div> <!-- #header -->
-	<section class="flat-register-now">
+        </div> <!-- #header -->
+	    <section class="flat-register-now">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -149,22 +169,14 @@
 							<h6 class="title"> 开始我的学习之旅 </h6>
 							<p class="description">Stay Sharp. Get ahead with Learning Paths.</p>
 						</div>
-						<form>
+						<form action="javascript:void(0)" id="formLogin">
 							<div class="wrap-input">
-								<input type="text" name="name" placeholder="Your name">
+								<input type="text" name="username" placeholder="Your username">
 							</div>
 							<div class="wrap-input last-child">
-								<input type="email" name="email" placeholder="Your password">
+								<input type="password" name="password" placeholder="Your password">
 							</div>
-							<!--<div class="wrap-input ">-->
-								<!--<input type="text" name="phone" placeholder="Your phone number">-->
-							<!--</div>-->
-							<!--<div class="wrap-input">-->
-								<!--<input type="text" name="password" placeholder="Your phone number">-->
-							<!--</div>-->
-							<!--<div class="wrap-input last-child">-->
-								<!--<input type="text" name="xxx" placeholder="Your phone number">-->
-							<!--</div>-->
+
 							<div class="wrap-btn">
 								<button class="flat-button btn-apply">登录</button>
 							</div>
@@ -256,13 +268,13 @@
 			</div>
 		</div>
 	</section> 
-	<footer id="footer">
+	    <footer id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="widget-about">
 						<div id="logo-ft">
-							<a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" data-retina="images/logo/logo-ft@2x.png" data-width="157" data-height="29"></a>
+							<a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" ></a>
 						</div>
 						<p class="description">一个个人网站，记录日常学习的东西。包括但不限于计算机语言、读书笔记</p>
 						<div class="list-info">
@@ -510,7 +522,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="bottom bg-15222e">
+	    <div class="bottom bg-15222e">
 		<div class="container">
 			<div class="row">
 				<div class="  col-md-6">
@@ -532,9 +544,37 @@
 		</div>
 	</div> <!-- /.bottom -->
 
-	<a id="scroll-top"></a>
+	    <a id="scroll-top"></a>
 
 
+    </div>
 
+    <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/parallax.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/owl.carousel.min.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/jquery-fancybox.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/imagesloaded.min.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/jquery-isotope.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/waypoints.min.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/jquery.easing.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/jquery.cookie.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+    <script>
+        $(function () {
+            $("#formLogin").submit(function (data) {
+                $.get("${pageContext.request.contextPath}/user/login",$(this).serialize(data),function (info) {
+                    if(info!=null&&info!=""){ //登录成功后转到主页
+                        window.location.href = "${pageContext.request.contextPath}/index.jsp";
+                    }else{
+                        alert("登录失败,用户名或密码错误！");
+                    }
+                });
+            });
+        });
+        checkLogin("${pageContext.request.contextPath}");
+    </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package com.zsj;
+package com.zsj.web;
 
 import com.zsj.service.UserService;
 import org.junit.Test;

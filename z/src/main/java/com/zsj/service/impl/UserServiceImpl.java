@@ -19,4 +19,25 @@ public class UserServiceImpl implements UserService {
         List<User> all = userDao.findAll();
         return all;
     }
+
+    @Override
+    public boolean register(User user) {
+        try{
+            userDao.register(user);
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    @Override
+    public User login(User user) {
+        try{
+            return userDao.findOne(user);
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

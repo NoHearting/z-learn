@@ -9,7 +9,7 @@ public class User implements Serializable {
     private String gender;      //性别
     private String address;     //地址
     private String email;      //邮箱
-
+    private String phone;     //电话
 
     @Override
     public String toString() {
@@ -20,7 +20,16 @@ public class User implements Serializable {
                 ", gender='" + gender + '\'' +
                 ", address='" + address + '\'' +
                 ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
                 '}';
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public Integer getId() {

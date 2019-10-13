@@ -23,7 +23,7 @@
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/colors/color1.css" id="colors">
 
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.png">
-        <link rel="apple-touch-icon-precomposed" href="images/favicon-apple.png">
+        <link rel="apple-touch-icon-precomposed" href="${pageContext.request.contextPath}/images/favicon-apple.png">
 
     </head>  
     <body class="bg-body2">
@@ -71,14 +71,13 @@
                 <div class="container">
                     <div class="header-wrap clearfix">
                         <div id="logo">
-                            <a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" data-retina="images/logo/logo@2x.png" data-width="157" data-height="29"></a>
+                            <a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" ></a>
                         </div>
                         <div class="nav-wrap flat-text-right style1">
                             <nav id="main-nav">
                                 <ul class="menu" >
                                     <li class="active">
-                                        <a href="#">首页</a>
-
+                                        <a href="${pageContext.request.contextPath}/index.jsp">首页</a>
                                     </li>
                                     <li>
                                         <a href="#">计算机语言</a>
@@ -106,8 +105,8 @@
                                     <li >
                                         <a href="#">关于</a>
                                         <ul class="submenu">
-                                            <li><a href="pages/FAQs">常见问题</a></li>
-                                            <li><a href="pages/about-us">关于我们</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/FAQs">常见问题</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/about-us">关于我们</a></li>
                                             <li class="item-has-child">
                                                 <a href="#">SHOP</a>
                                                 <ul class="submenu">
@@ -173,7 +172,7 @@
                     <div class="content-page-wrap">
                         <div class="flat-about-info">
                             <div class="info-img border-ra4">
-                                <a href="#"><img src="images/about/into.png" alt="bookflare"></a>
+                                <a href="#"><img src="${pageContext.request.contextPath}/images/about/into.png" alt="z-learn"></a>
                             </div> <!-- /.info-img -->
                             <div class="info-content border-ra4 border-f-e6f3ff">
                                 <div class="heading">
@@ -227,7 +226,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="imgbox-img">
-                                                            <a href="#"><img src="images/about/detail-1.png" alt="bookflare"></a>
+                                                            <a href="#"><img src="${pageContext.request.contextPath}/images/about/detail-1.png" alt="bookflare"></a>
                                                         </div> 
                                                     </div>
                                                 </div>
@@ -236,7 +235,7 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="imgbox-img">
-                                                            <a href="#"><img src="images/about/detail-2.png" alt="bookflare"></a>
+                                                            <a href="#"><img src="${pageContext.request.contextPath}/images/about/detail-2.png" alt="bookflare"></a>
                                                         </div> 
                                                     </div>
                                                     <div class="col-md-6">
@@ -275,7 +274,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="imgbox-img">
-                                                            <a href="#"><img src="images/about/detail-1.png" alt="bookflare"></a>
+                                                            <a href="#"><img src="${pageContext.request.contextPath}/images/about/detail-1.png" alt="bookflare"></a>
                                                         </div> 
                                                     </div>
                                                 </div>
@@ -284,7 +283,7 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="imgbox-img">
-                                                            <a href="#"><img src="images/about/detail-2.png" alt="bookflare"></a>
+                                                            <a href="#"><img src="${pageContext.request.contextPath}/images/about/detail-2.png" alt="bookflare"></a>
                                                         </div> 
                                                     </div>
                                                     <div class="col-md-6">
@@ -312,7 +311,7 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="imgbox-img">
-                                                            <a href="#"><img src="images/about/detail-2.png" alt="bookflare"></a>
+                                                            <a href="#"><img src="${pageContext.request.contextPath}/images/about/detail-2.png" alt="bookflare"></a>
                                                         </div> 
                                                     </div>
                                                     <div class="col-md-6">
@@ -372,7 +371,10 @@
                                 <div class="accordion">
                                     <div class="accordion-toggle border-f-e6f3ff border-ra4">
                                         <div class="toggle-title active">
-                                            We have a team of experienced teachers
+                                            We have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachers
+                                            We have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachers
+                                            We have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachers
+                                            We have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachers
                                         </div>
                                         <div class="toggle-content" >
                                             <p>Our academics cooperate across disciplines to create exciting new courses and develop novel approaches to research issues. Our interdisciplinary ethos has helped us to become a national leader in many subject areas.
@@ -451,55 +453,10 @@
                     </div>
                 </section> <!-- /.flat-faqs -->
 
-                <section class="flat-free-month parallax parallax14">
-                    <div class="container">
-                        <div class="service-wrap flat-text-center">
-                            <h2 class="title"><a href="#">Start My Free Month!</a></h2>
-                            <p class="description">We offer professional SEO services that help websites <a href="#" class="link-site">increase their organic search</a> score drastically in order to compete for the highest rankings.</p>
-                            <div class="wrap-btn">
-                                <a href="#" class="flat-button btn-start border-ra4 font-Poppins font-weight-700">START MY FREE MONTH</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
             </div> <!-- /.content-wrap -->
 
-            <section class="flat-feature parallax parallax2 style2"> 
-                <div class="container">
-                    <div class="row flat-iconbox style1">
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 left">
-                                <div class="iconbox-icon">
-                                    <span class="icon-book"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">80,000 ONLINE COURSES</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 center">
-                                <div class="iconbox-icon">
-                                    <span class="icon-people"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">EXPERT INSTRUCTION</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 right">
-                                <div class="iconbox-icon">
-                                    <span class="icon-key"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">LIFETIME ACCESS</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             <footer id="footer">
                 <div class="container">
@@ -507,7 +464,7 @@
                         <div class="col-md-4">
                             <div class="widget-about">
                                 <div id="logo-ft">
-                                    <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="bookflare" width="157" height="29" data-retina="images/logo/logo-ft@2x.png" data-width="157" data-height="29"></a>
+                                    <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="bookflare" width="157" height="29" ></a>
                                 </div>
                                 <p class="description">We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
                                 <div class="list-info">
@@ -792,5 +749,12 @@
         <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+        <script>
+            $(function () {
+                //检查登录状态
+                checkLogin("${pageContext.request.contextPath}");
+            })
+        </script>
     </body>
 </html>

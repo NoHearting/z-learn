@@ -3,6 +3,8 @@ package com.zsj.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * 页面转发、重定向跳转
  */
@@ -45,9 +47,9 @@ public class PageController {
         return "test";
     }
 
-    @RequestMapping("/about_us")
+    @RequestMapping("/about-us")
     public String aboutUs(){
-        return "about_us";
+        return "about-us";
     }
 
     @RequestMapping("/language")
@@ -59,4 +61,16 @@ public class PageController {
     public String index(){
         return "redirect:/index.jsp";
     }
+
+    @RequestMapping("/logout")
+    public String logout(HttpServletRequest request){
+        request.getSession().removeAttribute("user");
+        return "redirect:/index.jsp";
+    }
+
+    @RequestMapping("problem")
+    public String problem(){
+        return "problem";
+    }
+
 }

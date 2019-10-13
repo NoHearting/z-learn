@@ -112,7 +112,7 @@
                 <div class="container">
                     <div class="header-wrap clearfix">
                         <div id="logo">
-                            <a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" data-retina="images/logo/logo@2x.png" data-width="157" data-height="29"></a>
+                            <a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" ></a>
                         </div>
                         <div class="nav-wrap flat-text-right style1">
                             <nav id="main-nav">
@@ -321,7 +321,7 @@
                         <div class="col-md-4">
                             <div class="widget-about">
                                 <div id="logo-ft">
-                                    <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" data-retina="images/logo/logo-ft@2x.png" data-width="157" data-height="29"></a>
+                                    <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" ></a>
                                 </div>
                                 <p class="description">一个个人网站，记录日常学习的东西。包括但不限于计算机语言、读书笔记</p>
                                 <div class="list-info">
@@ -607,7 +607,13 @@
         <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
-
+        <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+        <script>
+            $(function () {
+                //检查登录状态
+                checkLogin("${pageContext.request.contextPath}");
+            })
+        </script>
         <!-- <script type="text/javascript">   //目前样式修改设置开启按钮被挂载到NEWS按钮上
             $(function(){
                 $(".switcher-container").css("display","none");

@@ -3,7 +3,7 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 <!--<![endif]-->
-    <head>
+<head>
         <!-- Basic Page Needs -->
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -26,16 +26,16 @@
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.png">
         <link rel="apple-touch-icon-precomposed" href="images/favicon-apple.png">
 
-    </head>  
-    <body class="bg-body">
-        <div class="boxed">
-            <div class="preloader">
+</head>
+<body class="bg-body">
+    <div class="boxed">
+        <div class="preloader">
                 <span class="loader">
                     <span class="loader-inner"></span>
                 </span>
             </div>
 
-            <div class="top border-bt-d1d1ff style2">
+        <div class="top border-bt-d1d1ff style2">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
@@ -68,11 +68,11 @@
 
             </div>
 
-            <div id="header" class="bg-fff style1">
+        <div id="header" class="bg-fff style1">
                 <div class="container">
                     <div class="header-wrap clearfix">
                         <div id="logo">
-                            <a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" data-retina="images/logo/logo@2x.png" data-width="157" data-height="29"></a>
+                            <a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" ></a>
                         </div>
                         <div class="nav-wrap flat-text-right style1">
                             <nav id="main-nav">
@@ -154,7 +154,7 @@
                 </div>
             </div> <!-- #header -->
 
-            <section class="flat-title-page parallax parallax1 ">
+        <section class="flat-title-page parallax parallax1 ">
                 <div class="overlay"></div> 
                 <div class="container wrap-title-page bg-img">
                     <div class="title-page">
@@ -171,7 +171,7 @@
                 </div>
             </section> <!-- /.flat-title-page -->
 
-            <div class="content-wrap event-v1-page">
+        <div class="content-wrap event-v1-page">
                 <div class="container">
                     <div class="content-page-wrap">
                         <div class="flat-events style1">
@@ -179,7 +179,7 @@
                                 <div class="row">
                                     <div class=" col-lg-7 col-md-12">
                                         <div class="event-img">
-                                            <a href="#"><img src="images/events/event-grid-1.png" alt="bookflare"></a>
+                                            <a href="#"><img src="${pageContext.request.contextPath}/images/events/event-grid2-1.png" alt="bookflare"></a>
                                             <div class="meta-date flat-text-center">
                                                 <span class="day">06</span>
                                                 <span class="month">DECEMBER</span>
@@ -203,7 +203,7 @@
 
                                             <div class="author clearfix">
                                                 <div class="author-avata">
-                                                    <img src="images/events/author-teacher.png" alt="bookflare">
+                                                    <img src="${pageContext.request.contextPath}/images/events/author-teacher.png" alt="bookflare">
                                                 </div> 
                                                 <div class="author-info">
                                                     <h4 class="name"><a href="#">Charlotte H. Bronk</a></h4>
@@ -233,7 +233,7 @@
 
                                             <div class="author clearfix">
                                                 <div class="author-avata">
-                                                    <img src="images/events/author-teacher.png" alt="bookflare">
+                                                    <img src="${pageContext.request.contextPath}/images/events/author-teacher.png" alt="bookflare">
                                                 </div> 
                                                 <div class="author-info">
                                                     <h4 class="name"><a href="#">Charlotte H. Bronk</a></h4>
@@ -244,7 +244,7 @@
                                     </div>
                                     <div class=" col-lg-7 col-md-12">
                                         <div class="event-img">
-                                            <a href="#"><img src="images/events/event-grid-2.png" alt="bookflare"></a>
+                                            <a href="#"><img src="${pageContext.request.contextPath}/images/events/event-grid2-2.png" alt="bookflare"></a>
                                             <div class="meta-date flat-text-center">
                                                 <span class="day">09</span>
                                                 <span class="month">DECEMBER</span>
@@ -257,7 +257,7 @@
                                 <div class="row">
                                     <div class=" col-lg-7 col-md-12">
                                         <div class="event-img">
-                                            <a href="#"><img src="images/events/event-grid-3.png" alt="bookflare"> </a>
+                                            <a href="#"><img src="${pageContext.request.contextPath}/images/events/event-grid2-3.png" alt="bookflare"> </a>
                                             <div class="meta-date flat-text-center">
                                                 <span class="day">12</span>
                                                 <span class="month">DECEMBER</span>
@@ -281,7 +281,7 @@
 
                                             <div class="author clearfix">
                                                 <div class="author-avata">
-                                                    <img src="images/events/author-teacher.png" alt="bookflare">
+                                                    <img src="${pageContext.request.contextPath}/images/events/author-teacher.png" alt="bookflare">
                                                 </div> 
                                                 <div class="author-info">
                                                     <h4 class="name"><a href="#">Charlotte H. Bronk</a></h4>
@@ -311,7 +311,7 @@
 
                                             <div class="author clearfix">
                                                 <div class="author-avata">
-                                                    <img src="images/events/author-teacher.png" alt="bookflare">
+                                                    <img src="${pageContext.request.contextPath}/images/events/author-teacher.png" alt="bookflare">
                                                 </div> 
                                                 <div class="author-info">
                                                     <h4 class="name"><a href="#">Charlotte H. Bronk</a></h4>
@@ -322,7 +322,7 @@
                                     </div>
                                     <div class="col-lg-7 col-md-12">
                                         <div class="event-img">
-                                            <a href="#"><img src="images/events/event-grid-4.png" alt="bookflare"></a>
+                                            <a href="#"><img src="${pageContext.request.contextPath}/images/events/event-grid2-4.png" alt="bookflare"></a>
                                             <div class="meta-date flat-text-center">
                                                 <span class="day">15</span>
                                                 <span class="month">DECEMBER</span>
@@ -347,7 +347,7 @@
                 </div> <!-- /.container -->
             </div> <!-- /.content-wrap -->
 
-            <section class="flat-feature parallax parallax2"> 
+        <section class="flat-feature parallax parallax2">
                 <div class="container">  
                     <div class="row flat-iconbox style1 ">
                         <div class="col-lg-4 col-md-4">
@@ -384,13 +384,13 @@
                 </div>
             </section>
 
-            <footer id="footer">
+        <footer id="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="widget-about">
                                 <div id="logo-ft">
-                                    <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" data-retina="images/logo/logo-ft@2x.png" data-width="157" data-height="29"></a>
+                                    <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn" width="157" height="29" ></a>
                                 </div>
                                 <p class="description">一个个人网站，记录日常学习的东西。包括但不限于计算机语言、读书笔记</p>
                                 <div class="list-info">
@@ -639,7 +639,7 @@
                 </div>
             </footer> <!-- #footer -->
 
-            <div class="bottom bg-15222e">
+        <div class="bottom bg-15222e">
                 <div class="container">
                     <div class="row">
                         <div class="  col-md-6">
@@ -661,18 +661,25 @@
                 </div>
             </div> <!-- /.bottom -->
             
-            <a id="scroll-top"></a>
-        </div>
+        <a id="scroll-top"></a>
+    </div>
 
 
-        <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/parallax.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/owl.carousel.min.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/waypoints.min.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/jquery.easing.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/jquery.cookie.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
-    </body>
+    <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/parallax.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/owl.carousel.min.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/waypoints.min.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/jquery.easing.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/jquery.cookie.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+    <script>
+        $(function () {
+            //检查登录状态
+            checkLogin("${pageContext.request.contextPath}");
+        })
+    </script>
+</body>
 </html>

@@ -23,11 +23,11 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/colors/color1.css" id="colors">
 
         <!-- REVOLUTION LAYERS STYLES -->
-        <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-        <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/revolution/css/layers.css">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/revolution/css/settings.css">
 
-        <link rel="shortcut icon" href="images/favicon.png">
-        <link rel="apple-touch-icon-precomposed" href="images/favicon-apple.png">
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="${pageContext.request.contextPath}/images/favicon-apple.png">
 
 
     </head>  
@@ -60,12 +60,12 @@
                                     <span class="font-Hall font-weight-700 letter-spaceing-top">Only By Learn</span>
                                     <span class="font-Playfair font-weight-700 letter-spaceing-top"></span>
                                 </p>
-                                <p class="font-weight-700 datetime">未登录</p>
+                                <p class="font-weight-700 datetime" id="loginStatus">未登录</p>
                             </div>  
                             <div class="flat-action flat-text-right style1">
                                 <ul>
-                                    <li><a href="pages/regist">注册</a></li>
-                                    <li><a href="pages/login">登录</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/pages/regist">注册</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/pages/login" id="login">登录</a></li>
                                 </ul>
                             </div> 
                         </div> 
@@ -78,7 +78,7 @@
                 <div class="container">
                     <div class="header-wrap clearfix">
                         <div id="logo">
-                            <a href="index.jsp"><img src="images/logo/logo.png" alt="bookflare" width="157" height="29" data-retina="images/logo/logo@2x.png" data-width="157" data-height="29"></a>
+                            <a href="index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="z-learn" width="157" height="29"  ></a> <%-- data-retina="${pageContext.request.contextPath}/images/logo/logo@2x.png" data-width="157" data-height="29" --%>
                         </div>
                         <div class="nav-wrap flat-text-right style1">
                             <nav id="main-nav">
@@ -90,31 +90,31 @@
                                     <li>
                                         <a href="#">计算机语言</a>
                                         <ul class="submenu">
-                                            <li><a href="pages/language">C</a></li>
-                                            <li><a href="pages/language">C++</a></li>
-                                            <li><a href="pages/language">Java</a></li>
-                                            <li><a href="pages/language">Python</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/language">C</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/language">C++</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/language">Java</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/language">Python</a></li>
                                         </ul>
                                     </li>
                                    
                                     <li>
                                         <a href="#">计算机课程</a>
                                         <ul class="submenu">
-                                            <li><a href="pages/course">数据结构</a></li>
-                                            <li><a href="pages/course">操作系统</a></li>
-                                            <li><a href="pages/course">计算机组成原理</a></li>
-                                            <li><a href="pages/course">计算机网络</a></li>
-                                            <li><a href="pages/course">数据库</a></li>
-                                            <li><a href="pages/course">嵌入式</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/course">数据结构</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/course">操作系统</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/course">计算机组成原理</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/course">计算机网络</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/course">数据库</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/course">嵌入式</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="instructors.html">读书笔记</a></li>
-                                    <li><a href="#">兴趣爱好</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/pages/problem">兴趣爱好</a></li>
                                     <li >
                                         <a href="#">关于</a>
                                         <ul class="submenu">
-                                            <li><a href="pages/FAQs">常见问题</a></li>
-                                            <li><a href="pages/about-us">关于我们</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/FAQs">常见问题</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/about-us">关于我们</a></li>
                                             <li class="item-has-child">
                                                 <a href="#">SHOP</a>
                                                 <ul class="submenu">
@@ -168,7 +168,7 @@
                             <!-- Slide 1 -->
                             <li data-transition="random">
                                 <!-- Main Image -->
-                                <img src="images/slider/slider-1.png" alt="bookflare"  class="rev-slidebg" 
+                                <img src="${pageContext.request.contextPath}/images/slider/slider-1.png" alt="z-learn"  class="rev-slidebg"
                                 data-bgposition="center center" 
                                 data-bgfit="cover" 
                                 data-bgrepeat="no-repeat" 
@@ -235,7 +235,7 @@
                                 data-responsive_offset="on" 
                                 data-paddingtop= "['50','50','50','50']"
                                 data-paddingbottom= "['50','50','50','50']"
-                                data-textAlign="['center','center','center','center']"><a href="pages/test" class="flat-button btn-start-slider border-ra4 ">  开始随机测试</a>  </div>
+                                data-textAlign="['center','center','center','center']"><a href="${pageContext.request.contextPath}/pages/problem" class="flat-button btn-start-slider border-ra4 ">  开始随机测试</a>  </div>
                             </li><!-- /End Slide 1 -->    
                         </ul>
                     </div>
@@ -285,7 +285,7 @@
                         <div class="course style2 one-of-three text-2ebd59">
                             <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
                                 <div class="course-img img-vline">
-                                    <a href="#"><img src="images/courses/courses-index-1.png" alt="bookflare"></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-index-1.png" alt="z-learn"></a>
                                     <div class="overlay">
                                         <span class="vline"></span>
                                         <span class="vline vline-bottom"></span>
@@ -313,7 +313,7 @@
                         <div class="course style2 one-of-three text-ea0042">
                             <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
                                 <div class="course-img img-vline">
-                                    <a href="#"><img src="images/courses/courses-index-2.png" alt="bookflare"></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-index-2.png" alt="z-learn"></a>
                                     <div class="overlay">
                                         <span class="vline"></span>
                                         <span class="vline vline-bottom"></span>
@@ -345,7 +345,7 @@
                         <div class="course style2 one-of-three text-c100ea">
                             <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
                                 <div class="course-img img-vline">
-                                    <a href="#"><img src="images/courses/courses-index-3.png" alt="bookflare"></a>
+                                    <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-index-3.png" alt="z-learn"></a>
                                     <div class="overlay">
                                         <span class="vline"></span>
                                         <span class="vline vline-bottom"></span>
@@ -389,7 +389,7 @@
                             <div class="col-lg-4 col-md-12">
                                 <div class="event style2">
                                     <div class="event-img">
-                                        <a href="#"><img src="images/events/event-grid2-1.png" alt="bookflare"></a>
+                                        <a href="#"><img src="${pageContext.request.contextPath}/images/events/event-grid2-1.png" alt="z-learn"></a>
                                     </div>
                                     <div class="event-content">
                                         <h6 class="title"><a href="#">TED Talks at UCF College of Education</a></h6>
@@ -409,7 +409,7 @@
                             <div class="col-lg-4 col-md-12">
                                 <div class="event style2">
                                     <div class="event-img">
-                                        <a href="#"><img src="images/events/event-grid2-2.png" alt="bookflare"></a>
+                                        <a href="#"><img src="${pageContext.request.contextPath}/images/events/event-grid2-2.png" alt="z-learn"></a>
                                     </div>
                                     <div class="event-content">
                                         <h6 class="title"><a href="#">Summer Course Starts From June</a></h6>
@@ -429,7 +429,7 @@
                             <div class="col-lg-4 col-md-12">
                                 <div class="event style2">
                                     <div class="event-img">
-                                        <a href="#"><img src="images/events/event-grid2-3.png" alt="bookflare"></a>
+                                        <a href="#"><img src="${pageContext.request.contextPath}/images/events/event-grid2-3.png" alt="z-learn"></a>
                                     </div>
                                     <div class="event-content">
                                         <h6 class="title"><a href="#">Importance of Research Seminar</a></h6>
@@ -453,43 +453,43 @@
 
            
 
-            <section class="flat-feature parallax parallax2">
-                <!-- <div class="overlay"></div> -->
-                <div class="container">
-                    <div class="row flat-iconbox style1">
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 left">
-                                <div class="iconbox-icon">
-                                    <span class="icon-book"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">80,000 ONLINE COURSES</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 center">
-                                <div class="iconbox-icon">
-                                    <span class="icon-people"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">EXPERT INSTRUCTION</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 right">
-                                <div class="iconbox-icon">
-                                    <span class="icon-key"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">LIFETIME ACCESS</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- /.flat-feature -->
+            <%--<section class="flat-feature parallax parallax2">--%>
+                <%--<!-- <div class="overlay"></div> -->--%>
+                <%--<div class="container">--%>
+                    <%--<div class="row flat-iconbox style1">--%>
+                        <%--<div class="col-lg-4 col-md-4">--%>
+                            <%--<div class="iconbox style1 left">--%>
+                                <%--<div class="iconbox-icon">--%>
+                                    <%--<span class="icon-book"></span>--%>
+                                <%--</div>--%>
+                                <%--<div class="iconbox-content">--%>
+                                    <%--<h5 class="title">80,000 ONLINE COURSES</h5>--%>
+                                <%--</div>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                        <%--<div class="col-lg-4 col-md-4">--%>
+                            <%--<div class="iconbox style1 center">--%>
+                                <%--<div class="iconbox-icon">--%>
+                                    <%--<span class="icon-people"></span>--%>
+                                <%--</div>--%>
+                                <%--<div class="iconbox-content">--%>
+                                    <%--<h5 class="title">EXPERT INSTRUCTION</h5>--%>
+                                <%--</div>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                        <%--<div class="col-lg-4 col-md-4">--%>
+                            <%--<div class="iconbox style1 right">--%>
+                                <%--<div class="iconbox-icon">--%>
+                                    <%--<span class="icon-key"></span>--%>
+                                <%--</div>--%>
+                                <%--<div class="iconbox-content">--%>
+                                    <%--<h5 class="title">LIFETIME ACCESS</h5>--%>
+                                <%--</div>--%>
+                            <%--</div>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                <%--</div>--%>
+            <%--</section> <!-- /.flat-feature -->--%>
 
             <footer id="footer">
                 <div class="container">
@@ -497,7 +497,7 @@
                         <div class="col-md-4">
                             <div class="widget-about">
                                 <div id="logo-ft">
-                                    <a href="index.jsp"><img src="images/logo/logo-ft.png" alt="Z-Learn"  width="157" height="29" data-retina="images/logo/logo-ft@2x.png" data-width="157" data-height="29"></a>
+                                    <a href="index.jsp"><img src="${pageContext.request.contextPath}/images/logo/logo-ft.png" alt="Z-Learn"  width="157" height="29"></a>
                                 </div>
                                 <p class="description">一个个人网站，记录日常学习的东西。包括但不限于计算机语言、读书笔记</p>
                                 <div class="list-info">
@@ -547,7 +547,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-1.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-1.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -558,31 +558,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-5.png" alt="bookflare">
-                                                        <div class="overlay">
-                                                            <span class="vline"></span>
-                                                            <span class="vline vline-bottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="imgbox style1 transition-vline">
-                                                <a href="#">
-                                                    <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-2.png" alt="bookflare">
-                                                        <div class="overlay">
-                                                            <span class="vline"></span>
-                                                            <span class="vline vline-bottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="imgbox style1 transition-vline">
-                                                <a href="#">
-                                                    <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-6.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-5.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -595,7 +571,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-3.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-2.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -606,31 +582,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-7.png" alt="bookflare">
-                                                        <div class="overlay">
-                                                            <span class="vline"></span>
-                                                            <span class="vline vline-bottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="imgbox style1 transition-vline">
-                                                <a href="#">
-                                                    <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-4.png" alt="bookflare">
-                                                        <div class="overlay">
-                                                            <span class="vline"></span>
-                                                            <span class="vline vline-bottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="imgbox style1 transition-vline">
-                                                <a href="#">
-                                                    <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-8.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-6.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -643,7 +595,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-1.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-3.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -654,31 +606,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-2.png" alt="bookflare">
-                                                        <div class="overlay">
-                                                            <span class="vline"></span>
-                                                            <span class="vline vline-bottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="imgbox style1 transition-vline">
-                                                <a href="#">
-                                                    <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-3.png" alt="bookflare">
-                                                        <div class="overlay">
-                                                            <span class="vline"></span>
-                                                            <span class="vline vline-bottom"></span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="imgbox style1 transition-vline">
-                                                <a href="#">
-                                                    <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-4.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-7.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -691,7 +619,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-5.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-4.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -702,7 +630,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-6.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-8.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -715,7 +643,7 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-7.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-1.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -726,7 +654,79 @@
                                             <div class="imgbox style1 transition-vline">
                                                 <a href="#">
                                                     <div class="imgbox-img img-vline">
-                                                        <img src="images/footer/work-8.png" alt="bookflare">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-2.png" alt="z-learn">
+                                                        <div class="overlay">
+                                                            <span class="vline"></span>
+                                                            <span class="vline vline-bottom"></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="imgbox style1 transition-vline">
+                                                <a href="#">
+                                                    <div class="imgbox-img img-vline">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-3.png" alt="z-learn">
+                                                        <div class="overlay">
+                                                            <span class="vline"></span>
+                                                            <span class="vline vline-bottom"></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="imgbox style1 transition-vline">
+                                                <a href="#">
+                                                    <div class="imgbox-img img-vline">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-4.png" alt="z-learn">
+                                                        <div class="overlay">
+                                                            <span class="vline"></span>
+                                                            <span class="vline vline-bottom"></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="imgbox style1 transition-vline">
+                                                <a href="#">
+                                                    <div class="imgbox-img img-vline">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-5.png" alt="z-learn">
+                                                        <div class="overlay">
+                                                            <span class="vline"></span>
+                                                            <span class="vline vline-bottom"></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="imgbox style1 transition-vline">
+                                                <a href="#">
+                                                    <div class="imgbox-img img-vline">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-6.png" alt="z-learn">
+                                                        <div class="overlay">
+                                                            <span class="vline"></span>
+                                                            <span class="vline vline-bottom"></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="imgbox style1 transition-vline">
+                                                <a href="#">
+                                                    <div class="imgbox-img img-vline">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-7.png" alt="z-learn">
+                                                        <div class="overlay">
+                                                            <span class="vline"></span>
+                                                            <span class="vline vline-bottom"></span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="imgbox style1 transition-vline">
+                                                <a href="#">
+                                                    <div class="imgbox-img img-vline">
+                                                        <img src="${pageContext.request.contextPath}/images/footer/work-8.png" alt="z-learn">
                                                         <div class="overlay">
                                                             <span class="vline"></span>
                                                             <span class="vline vline-bottom"></span>
@@ -751,7 +751,7 @@
                     <div class="row">
                         <div class="  col-md-6">
                             <div class="copyright flat-text-left">
-                                <p>© Copyright 2019 <a href="http://www.17sucai.com/">Z</a>. All Rights Reserved.</p>
+                                <p>© Copyright 2019 <a href="http://120.78.223.0">Z</a>. All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="  col-md-6">
@@ -772,33 +772,40 @@
         </div>
 
 
-        <script src="javascript/jquery.min.js"></script>
-        <script src="javascript/parallax.js"></script>
-        <script src="javascript/owl.carousel.min.js"></script>
-        <script src="javascript/jquery-fancybox.js"></script>
-        <script src="javascript/imagesloaded.min.js"></script>
-        <script src="javascript/jquery-isotope.js"></script>
-        <script src="javascript/waypoints.min.js"></script>
-        <script src="javascript/jquery.easing.js"></script>
-        <script src="javascript/jquery.cookie.js"></script>
-        <script src="javascript/smoothscroll.js"></script>
-        <script src="javascript/switcher.js"></script>
-        <script src="javascript/main.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/parallax.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/owl.carousel.min.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/jquery-fancybox.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/imagesloaded.min.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/jquery-isotope.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/waypoints.min.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/jquery.easing.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/jquery.cookie.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
 
         <!-- Revolution Slider -->
-        <script src="revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="revolution/js/slider.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/slider.js"></script>
 
         <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->    
-        <script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+        <script>
+            $(function () {
+                //检查登录状态
+                checkLogin("${pageContext.request.contextPath}");
+            })
+        </script>
     </body>
 </html>

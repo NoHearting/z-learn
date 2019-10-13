@@ -1,7 +1,12 @@
-package cn.itcast.travel.domain;
+package com.zsj.domain;
 
 import java.util.List;
 
+/**
+ * 分页查询传递数据的实体类
+ * service层传递给表现层
+ * @param <T>
+ */
 public class PageBean<T> {
     private int totalCount; //总记录数
     private int totalPage; //分页总数
