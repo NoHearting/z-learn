@@ -32,8 +32,6 @@ public class TestMyBatis {
 
     @Test
     public void test1(){
-        ChooseQuestionController cqc = new ChooseQuestionController();
-        List<Problem> problems = cqc.selectQuestions("", 1, 5, false);
-        System.out.println(problems);
+
     }
 }

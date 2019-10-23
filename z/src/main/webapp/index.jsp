@@ -48,7 +48,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="flat-info">
                                 <ul>
-                                    <li class="phone"><a href="#">15086998051</a></li>
+                                    <li class="phone"><a href="${pageContext.request.contextPath}/blog/test">15086998051</a></li>
                                     <li class="mail"><a href="#">313434726@qq.com</a></li>
                                 </ul>
                             </div>
@@ -101,7 +101,7 @@
                                         <a href="#">计算机课程</a>
                                         <ul class="submenu">
                                             <li><a href="${pageContext.request.contextPath}/pages/course">数据结构</a></li>
-                                            <li><a href="${pageContext.request.contextPath}/pages/course">操作系统</a></li>
+                                            <li><a href="${pageContext.request.contextPath}/pages/course3">操作系统</a></li>
                                             <li><a href="${pageContext.request.contextPath}/pages/course">计算机组成原理</a></li>
                                             <li><a href="${pageContext.request.contextPath}/pages/course">计算机网络</a></li>
                                             <li><a href="${pageContext.request.contextPath}/pages/course">数据库</a></li>
@@ -251,7 +251,7 @@
                                     <span class="icon-contract-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span>
                                 </div>
                                 <div class="iconbox-content">
-                                    <h6 class="title"><a href="#">复习资料添加</a></h6>
+                                    <h6 class="title"><a href="${pageContext.request.contextPath}/blog/write">复习资料添加</a></h6>
                                 </div>
                             </div>
                             <div class="iconbox one-of-three style3 flat-text-center active">

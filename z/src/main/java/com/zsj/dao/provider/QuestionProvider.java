@@ -13,15 +13,15 @@ import java.util.Objects;
 //@Repository("questionProvider")
 public class QuestionProvider {
 
-    String findQuestions(@Param("searchValue") String searchValue, @Param("beginIndex") int beginIndex,@Param("pageCount") int pageCount){
-        String limit = "limit "+beginIndex+", "+pageCount;
+    public String findQuestions(@Param("searchValue") String searchValue, @Param("beginIndex") int beginIndex,@Param("pageCount") int pageCount){
+        String limit = " limit "+beginIndex+", "+pageCount;
         return new SQL(){
             {
                 SELECT("*");
                 FROM("problems");
 
                 if(!Objects.equals(searchValue,null)&&!Objects.equals(searchValue,"")){
-                    WHERE("question like %#{searchValue}");
+                    WHERE("question like #{searchValue}");
                 }
             }
         }.toString()+limit;

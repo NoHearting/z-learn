@@ -3,6 +3,7 @@ package com.zsj.controller;
 
 import com.zsj.dao.QuestionDao;
 import com.zsj.dao.provider.QuestionProvider;
+import com.zsj.domain.PageBean;
 import com.zsj.domain.Problem;
 import com.zsj.service.ChooseQuestionService;
 import org.apache.ibatis.annotations.SelectProvider;
@@ -23,10 +24,17 @@ public class ChooseQuestionController {
 
     @ResponseBody
     @RequestMapping("/questions")
-    public List<Problem> selectQuestions(String searchValue, int beginIndex, int pageCount, boolean isRandom){
-        List<Problem> problems = chooseQuestionService.selectQuestions(searchValue, beginIndex, pageCount, isRandom);
-        System.out.println(problems);
-        return null;
+    public PageBean<Problem> selectQuestions(String searchValue, int currPage, int pageCount, boolean isRandom){
+        System.out.println("开始");
+        System.out.println(searchValue);
+        System.out.println(currPage);
+        System.out.println(pageCount);
+        System.out.println(isRandom);
+
+        System.out.println("-----------------------------------");
+        PageBean<Problem> pageBean = chooseQuestionService.selectQuestions(searchValue, currPage, pageCount, isRandom);
+        System.out.println(pageBean);
+        return pageBean;
     }
 
 

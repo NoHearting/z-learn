@@ -15,7 +15,7 @@ import java.util.List;
 @Repository
 public interface QuestionDao {
 
-//    @SelectProvider(type = QuestionProvider.class,method = "findQuestions")
+    @SelectProvider(type = QuestionProvider.class,method = "findQuestions")
     public List<Problem> selectQuestions(@Param("searchValue") String searchValue, @Param("beginIndex") int beginIndex, @Param("pageCount") int pageCount);
 
 

@@ -25,7 +25,23 @@
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.png">
         <link rel="apple-touch-icon-precomposed" href="${pageContext.request.contextPath}/images/favicon-apple.png">
 
+        <style>
+            .select-size{
+                display: block;
+                float:left;
+                width:100px;
+                height:36px;
+            }
+            .show-page{
+                display: block;
+                float:left;
+                width: 60px;
+                line-height:36px;
+                margin-left:10px;
 
+            }
+
+        </style>
     </head>  
     <body class="bg-body2">
         <div class="boxed">
@@ -166,7 +182,7 @@
                         <div class="row">
                             <div class="col-md-1"></div>
                             <div class="col-md-10">
-                                <div class="accordion">
+                                <div class="accordion" id="questions-show">
                                     <div class="accordion-toggle border-f-e6f3ff border-ra4">
                                         <div class="toggle-title active">
                                             We have a team of experienced teachersWe have a team of experienced teachersWe have a team of experienced teachersWe have a team
@@ -249,22 +265,38 @@
                             </div>
                             <div class="col-md-1"></div>
                         </div>
+                        <br>
+                        <br>
+                        <div class="flat-paginations">
+
+                            <ul class="list flat-text-center pagination-wrap" id="page-select">
+                                <li class="disabled"><a href="#" class="btn-navs">PRE</a></li>
+                                <li ><a href="#">1</a></li>
+                                <li class="active"><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <%--<li><a href="#">5</a></li>--%>
+                                <li><a href="#" class="btn-navs">NEXT</a></li>
+                            </ul>
+                            <br>
+                            <ul class="list flat-text-center pagination-wrap show">
+                                <li >
+                                    <select class="select-size" >
+                                        <option value="5">5</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </li>
+                                <li><span class="show-page">每页数量</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </section> <!-- /.flat-faqs -->
-                <div class="flat-paginations">
-                    <ul class="list flat-text-center pagination-wrap">
-                        <li class="disabled"><a href="#" class="btn-navs">PRE</a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#" class="btn-navs">NEXT</a></li>
-                    </ul>
-                </div>
+
             </div>
-            <br>
-            <br>
+
 
 
 
@@ -552,6 +584,7 @@
         </div>
 
         <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
+
         <script src="${pageContext.request.contextPath}/javascript/parallax.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/owl.carousel.min.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/jquery-fancybox.js"></script>
@@ -564,36 +597,18 @@
         <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/question.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/loadPage.js"></script>
         <script>
-            <%--
-                secrchValue:搜索框的值
-                currPage:当前页码
-                pageCount:每页最多的条数
-                isRandom:是否随机选择
-            --%>
-            function load(searchValue,currPage,pageCount,isRandom){
 
-            }
+        </script>
+        <script>
             $(function () {
                 //检查登录状态
                 checkLogin("${pageContext.request.contextPath}");
 
-
-            })
-        </script>
-        <!-- <script type="text/javascript">   //目前样式修改设置开启按钮被挂载到NEWS按钮上
-            $(function(){
-                $(".switcher-container").css("display","none");
-                $("#test_new").click(function(){
-                    // $(".switcher-container").removeAttr("style");  直接移除style属性有问题
-                    $(".switcher-container").css("display","inline");
-                });    
+                load(null,1,true);
             });
-        </script>   -->   
-        <script type="text/javascript">
-            $(function(){
-
-            })
         </script>
     </body>
 </html>

@@ -26,7 +26,7 @@ public class UserController {
         System.out.println("表现层：查询所有");
         List<User> all = userService.findAll();
         System.out.println(all);
-        return "list";
+        return "pages/list";
     }
 
 

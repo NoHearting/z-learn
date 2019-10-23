@@ -1,5 +1,6 @@
 package com.zsj.service;
 
+import com.zsj.domain.PageBean;
 import com.zsj.domain.Problem;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +18,5 @@ public interface ChooseQuestionService {
      * @param isRandom  是否随机获取问题
      * @return 返回问题列表
      */
-    public List<Problem> selectQuestions(String searchValue,int beginIndex,int pageCount,boolean isRandom);
+    public PageBean<Problem> selectQuestions(String searchValue, int beginIndex, int pageCount, boolean isRandom);
 }

@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>注册</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/bootstrap.css" >
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/style.css">  <!-- 主要美化文件 -->
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/responsive.css">

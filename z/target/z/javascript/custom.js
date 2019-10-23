@@ -13,5 +13,8 @@ function  checkLogin(url) {
             $("#loginStatus").text(data.username);
         }
 
-    })
+    });
 }
+
+
+
