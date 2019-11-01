@@ -26,4 +26,11 @@ public interface BlogService {
      * @return
      */
     PageBean<Blog> selectBlogs(String searchValue, int currPage, int pageCount);
+
+    /**
+     * 根据id查询博客详细信息
+     * @param id
+     * @return
+     */
+    Blog selectBlog(int id);
 }

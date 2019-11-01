@@ -72,4 +72,21 @@ public class BlogController {
         System.out.println(pageBean);
         return pageBean;
     }
+
+    /**
+     * 根据id查找博客的详细内容
+     * @param bId
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/selectBlog")
+    public Blog selectBlog(int bId){
+
+        Blog blog = blogService.selectBlog(bId);
+
+        return blog;
+    }
+
+
+
 }

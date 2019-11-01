@@ -564,7 +564,7 @@
     <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
     <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
     <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+    <script src="${pageContext.request.contextPath}/javascript/customFuc.js"></script>
     <script>
         $(function () {
             $("#formLogin").submit(function (data) {
@@ -577,7 +577,7 @@
                 });
             });
         });
-        checkLogin("${pageContext.request.contextPath}");
+        checkLogin();
     </script>
 </body>
 </html>

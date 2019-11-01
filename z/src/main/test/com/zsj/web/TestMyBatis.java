@@ -1,8 +1,6 @@
 package com.zsj.web;
 
-import com.zsj.controller.ChooseQuestionController;
 import com.zsj.dao.UserDao;
-import com.zsj.domain.Problem;
 import com.zsj.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

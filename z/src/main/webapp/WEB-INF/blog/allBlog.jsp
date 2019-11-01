@@ -777,7 +777,7 @@
 <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
 <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
 <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
-<script src="${pageContext.request.contextPath}/javascript/testFuc.js"></script>
+<script src="${pageContext.request.contextPath}/javascript/customFuc.js"></script>
 <script>
     $(function () {
         //检查登录状态

@@ -41,7 +41,7 @@
             width:100px;
             height:28px;
             padding-left: 14px;
-            background:url("../images/blog/left3.png") no-repeat 0px 6px;
+            background:url("/z/images/blog/left3.png") no-repeat 0px 6px;
         }
 
 
@@ -153,12 +153,12 @@
             </div>
             <div id="blog-body">
                 <div id="test-editor">
-            <textarea style="display:none;">### 关于 Editor.md
+            <textarea id="blog-html" style="display:none;" name="content">### 关于 Editor.md
 
         **Editor.md** 是一款开源的、可嵌入的 Markdown 在线编辑器（组件），基于 CodeMirror、jQuery 和 Marked 构建。
             </textarea>
                     <%--隐藏域   存放markdown的html数据--%>
-            <textarea id="blog-html" class="editormd-html-textarea" name="content"></textarea>
+            <textarea  class="editormd-html-textarea" ></textarea>
                 </div>
             </div>
             <div id="blog-footer">
@@ -252,7 +252,7 @@
         $(function () {
             $("#blog-content").submit(function () {
                 var header = $("#blog-header input").val();   //题目
-                var content = $("#blog-html").html();         //内容
+                var content = $("#blog-html").val()        //内容
                 var lis = $(".selected-label");
                 var labels = new Array(lis.length);     //多申请1个空间
 

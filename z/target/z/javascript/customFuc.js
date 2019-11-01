@@ -1,12 +1,22 @@
-function alertHello() {
-    alert("hello");
+
+//检查用户是否登录
+function  checkLogin() {
+    var path = +"/z/user/checkLogin";
+    $.get(path,{},function (data) {
+
+        if(data == null || data == ""){
+            var questUrl = "/z/pages/login";
+            $("#login").attr("href",questUrl).text("登录");
+            $("#loginStatus").text("未登录");
+        }else{
+            var questUrl = "/z/pages/logout";
+            $("#login").attr("href",questUrl).text("注销");
+            $("#loginStatus").text(data.username);
+        }
+
+    });
 }
 
-
-
-function alertHi() {
-    alert("hi");
-}
 
 
 //将时间戳转换成正常时间格式
@@ -22,9 +32,15 @@ function timestampToTime(timestamp) {
 }
 
 
-
+/**
+ *
+ * “所有博客”页面的显示
+ * 加载所有博客的信息和页码选择器
+ * @param searchValue
+ * @param currPage
+ */
 function loadBlog(searchValue,currPage) {
-    $.post("../blog/selectBlogs",{searchValue:searchValue,currPage:currPage,pageCount:10},function (pageBean) {
+    $.post("/z/blog/selectBlogs",{searchValue:searchValue,currPage:currPage,pageCount:10},function (pageBean) {
         //设置页码显示信息
         var lis = "";
         var firstPage;
@@ -83,7 +99,7 @@ function loadBlog(searchValue,currPage) {
                 '    <div class="course-border border-f-e6f3ff border-ra4 clear-sub-columns transition-vline">\n' +
                 '        <div class="course-content">' +
                 '            <div class="text-wrap border-bt-e6f3ff">' +
-                '                <h6 class="title"><a href="#">'+pageBean.list[i].title+'</a></h6>' +
+                '                <h6 class="title"><a href="/z/pages/showBlog?bId='+pageBean.list[i].bId+'">'+pageBean.list[i].title+'</a></h6>' +
                 '                   <p class="teacher"><a href="#">C++</a> <a href="#">Java</a></p>\n' +
                 '            </div>' +
                 '            <div class="wrap-rating-price">' +
@@ -116,3 +132,4 @@ function loadBlog(searchValue,currPage) {
     });
 
 }
+

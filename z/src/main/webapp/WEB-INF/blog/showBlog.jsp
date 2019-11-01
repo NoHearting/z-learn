@@ -25,7 +25,65 @@
 
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="images/favicon-apple.png">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/editermd/css/editormd.css" />
 
+    <style>
+        body{
+            background-color: rgb(245,246,247);
+        }
+        .blog-title-box{
+            height:60px;
+        }
+        #blog-content{
+            width:100%;
+            margin:0;
+            padding:20px;
+        }
+        .blog-content-header{
+            position: relative;
+            border-bottom: 1px solid black;
+        }
+        .blog-content-header,.blog-content-body,.blog-content-footer{
+            width: 100%;
+            background-color: white;
+
+            padding:5px;
+        }
+        .article-info{
+            padding-bottom: 10px;
+
+        }
+        .blog-operating{
+            position: absolute;
+            right: 15px;
+            top: 60px;
+        }
+        .article-info span,.article-info a{
+            display: inline-block;
+            margin: 0 6px;
+        }
+
+        .blog-content-body{
+            position: relative;
+
+        }
+        .postTime{
+            position: absolute;
+            right: 5px;
+        }
+        .tags-box span,.tags-box ul{
+            display: inline-block;
+            margin-left:10px;
+        }
+        .tags-box ul{
+            list-style: none;
+            list-style: none;
+        }
+        .tags-box ul li{
+            display: inline-block;
+            margin-left: 5px;
+        }
+    </style>
 </head>
 <body class="bg-body">
 <div class="boxed">
@@ -154,6 +212,37 @@
         </div>
     </div> <!-- #header -->
 
+    <div id="blog-content">
+        <div class="blog-content-header">
+            <div class="blog-title-box">
+                <span></span>
+                <h1 id="blog-title">开始 </h1>
+            </div>
+            <div class="article-info">
+                <span class="blog-write-time">2017-10-12 15:49:39</span>
+                <a href="" class="author-nickname" target="_blank">z无心</a>
+                <span class="read-times">阅读数 144562</span>
+                <a href="javascript:showMoreTags()" class="tags-more">更多</a>
+            </div>
+            <div class="blog-operating">
+                <a href="">编辑</a>
+            </div>
+            <div class="tags-box" style="display: none">
+                <span class="blog-label">分类标签</span>
+                <ul>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">Java</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-content-body" id="test-editormd">   <%-- --%>
+            <textarea id="article-content" style="display:none;" placeholder="markdown语言">
+            </textarea>
+        </div>
+        <div class="blog-content-footer">
+
+        </div>
+    </div>
 
 
 
@@ -449,12 +538,64 @@
 <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
 <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
 <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
+
+<%--markdown支持--%>
+<%--<script src="${pageContext.request.contextPath}/editermd/examples/js/jquery.min.js"></script>--%>
+<script src="${pageContext.request.contextPath}/editermd/lib/marked.min.js"></script>
+<script src="${pageContext.request.contextPath}/editermd/lib/prettify.min.js"></script>
+<script src="${pageContext.request.contextPath}/editermd/lib/raphael.min.js"></script>
+<script src="${pageContext.request.contextPath}/editermd/lib/underscore.min.js"></script>
+<script src="${pageContext.request.contextPath}/editermd/lib/sequence-diagram.min.js"></script>
+<script src="${pageContext.request.contextPath}/editermd/lib/flowchart.min.js"></script>
+<script src="${pageContext.request.contextPath}/editermd/lib/jquery.flowchart.min.js"></script>
+<script src="${pageContext.request.contextPath}/editermd/editormd.js"></script>
+
 <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
-<script src="${pageContext.request.contextPath}/javascript/testFuc.js"></script>
+<script src="${pageContext.request.contextPath}/javascript/customFuc.js"></script>
+
+
 <script>
     $(function () {
 
     });
+    function showMoreTags() {
+        if($(".tags-more").val()=="更多"){
+            $(".tags-box").css("display","block");
+            $(".tags-more").val("收起");
+        }else{
+            $(".tags-box").css("display","none");
+            $(".tags-more").val("更多");
+        }
+
+    }
 </script>
+
+<script type="text/javascript">
+    $(function() {
+        $.get("${pageContext.request.contextPath}/pages/getBId",{},function (bId) {
+            $.get("${pageContext.request.contextPath}/blog/selectBlog",{bId:bId},function (info) {
+                $("#blog-title,title").html(info.title);
+                $("#article-content").html(info.content);
+                $(".blog-write-time").html(timestampToTime(info.writeTime));
+                var readStr = "阅读数 "+info.readTimes;
+                $(".read-times").html(readStr);
+
+
+                editormd.markdownToHTML("test-editormd", {
+                    htmlDecode      : "style,script,iframe",
+                    emoji           : true,
+                    taskList        : true,
+                    tex             : true,  // 默认不解析
+                    flowChart       : true,  // 默认不解析
+                    sequenceDiagram : true  // 默认不解析
+                });
+            });
+        });
+
+
+    });
+</script>
+
+
 </body>
 </html>

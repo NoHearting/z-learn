@@ -143,7 +143,7 @@
                             <div class="wrap-search-header">
                                 <div class="search-header">
                                     <form>
-                                        <input type="search" name="key" placeholder="Search for Courses">
+                                        <input id="search-key" type="search" name="key" placeholder="Search for Courses">
                                         <button class="btn-search"><span class="icon-search"></span></button>
                                     </form>
                                 </div>
@@ -189,13 +189,7 @@
                                         </div>
                                         <div class="toggle-content" >
                                             <p>Our academics cooperate across disciplines to create exciting new courses and develop novel approaches to research issues. Our interdisciplinary ethos has helped us to become a national leader in many subject areas.
-                                            <%--</p>--%>
-                                            <%--<h6  class="title font-Publico font-weight-700">--%>
-                                                <%--<a href="#">--%>
-                                                <%--A transformational experience that will shape your unique profile and help you launch your professional career.--%>
-                                                <%--</a>--%>
-                                            <%--</h6>--%>
-                                            <%--<p>--%>
+
                                                 With the dawn of the twentieth century, the Company handed over the Institute to the University of London. It was re-christened Goldsmiths College and the modern era of Goldsmiths had begun.
                                             </p>
                                             <div class="clearfix"></div>
@@ -596,7 +590,7 @@
         <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/customFuc.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/question.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/loadPage.js"></script>
         <script>
@@ -605,7 +599,7 @@
         <script>
             $(function () {
                 //检查登录状态
-                checkLogin("${pageContext.request.contextPath}");
+                checkLogin();
 
                 load(null,1,true);
             });

@@ -48,7 +48,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="flat-info">
                                 <ul>
-                                    <li class="phone"><a href="${pageContext.request.contextPath}/blog/test">15086998051</a></li>
+                                    <li class="phone"><a href="${pageContext.request.contextPath}/blog/test2">15086998051</a></li>
                                     <li class="mail"><a href="#">313434726@qq.com</a></li>
                                 </ul>
                             </div>
@@ -453,43 +453,7 @@
 
            
 
-            <%--<section class="flat-feature parallax parallax2">--%>
-                <%--<!-- <div class="overlay"></div> -->--%>
-                <%--<div class="container">--%>
-                    <%--<div class="row flat-iconbox style1">--%>
-                        <%--<div class="col-lg-4 col-md-4">--%>
-                            <%--<div class="iconbox style1 left">--%>
-                                <%--<div class="iconbox-icon">--%>
-                                    <%--<span class="icon-book"></span>--%>
-                                <%--</div>--%>
-                                <%--<div class="iconbox-content">--%>
-                                    <%--<h5 class="title">80,000 ONLINE COURSES</h5>--%>
-                                <%--</div>--%>
-                            <%--</div>--%>
-                        <%--</div>--%>
-                        <%--<div class="col-lg-4 col-md-4">--%>
-                            <%--<div class="iconbox style1 center">--%>
-                                <%--<div class="iconbox-icon">--%>
-                                    <%--<span class="icon-people"></span>--%>
-                                <%--</div>--%>
-                                <%--<div class="iconbox-content">--%>
-                                    <%--<h5 class="title">EXPERT INSTRUCTION</h5>--%>
-                                <%--</div>--%>
-                            <%--</div>--%>
-                        <%--</div>--%>
-                        <%--<div class="col-lg-4 col-md-4">--%>
-                            <%--<div class="iconbox style1 right">--%>
-                                <%--<div class="iconbox-icon">--%>
-                                    <%--<span class="icon-key"></span>--%>
-                                <%--</div>--%>
-                                <%--<div class="iconbox-content">--%>
-                                    <%--<h5 class="title">LIFETIME ACCESS</h5>--%>
-                                <%--</div>--%>
-                            <%--</div>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                <%--</div>--%>
-            <%--</section> <!-- /.flat-feature -->--%>
+
 
             <footer id="footer">
                 <div class="container">
@@ -800,11 +764,11 @@
         <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
         <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
         <script src="${pageContext.request.contextPath}/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+        <script src="${pageContext.request.contextPath}/javascript/customFuc.js"></script>
         <script>
             $(function () {
                 //检查登录状态
-                checkLogin("${pageContext.request.contextPath}");
+                checkLogin();
             })
         </script>
     </body>

@@ -32,5 +32,6 @@
     <!-- 开启对SpringMVC注解的支持 -->
     <mvc:annotation-driven />
 
+    <bean id="sysExceptionResolver" class="com.zsj.exception.resolver.SysExceptionResolver"></bean>
 
 </beans>

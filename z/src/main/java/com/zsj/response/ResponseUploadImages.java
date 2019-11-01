@@ -2,6 +2,9 @@ package com.zsj.response;
 
 import java.io.Serializable;
 
+/**
+ * 写博客时上传图片成功后的返回信息
+ */
 public class ResponseUploadImages implements Serializable {
     private int success;   //成功与否
     private String message;  //信息

@@ -6,16 +6,38 @@ public class Problem implements Serializable {
     private int pId;
     private String question;
     private String answer;
-    private int bigType;
-    private String smallType;
+    private int isFinished;   // 是否完成
 
+    @Override
+    public String toString() {
+        return "Problem{" +
+                "pId=" + pId +
+                ", question='" + question + '\'' +
+                ", answer='" + answer + '\'' +
+                ", isFinished=" + isFinished +
+                '}';
+    }
 
-    public Problem(int pId, String problem, String answer, int bigType, String smallType) {
+    public int getIsFinished() {
+        return isFinished;
+    }
+
+    public void setIsFinished(int isFinished) {
+        this.isFinished = isFinished;
+    }
+
+    public Problem(int pId, String question, String answer, int isFinished) {
+        this.pId = pId;
+        this.question = question;
+        this.answer = answer;
+        this.isFinished = isFinished;
+    }
+
+    public Problem(int pId, String problem, String answer) {
         this.pId = pId;
         this.question = problem;
         this.answer = answer;
-        this.bigType = bigType;
-        this.smallType = smallType;
+
     }
 
     public Problem() {
@@ -45,30 +67,5 @@ public class Problem implements Serializable {
         this.answer = answer;
     }
 
-    public int getBigType() {
-        return bigType;
-    }
 
-    public void setBigType(int bigType) {
-        this.bigType = bigType;
-    }
-
-    public String getSmallType() {
-        return smallType;
-    }
-
-    public void setSmallType(String smallType) {
-        this.smallType = smallType;
-    }
-
-    @Override
-    public String toString() {
-        return "Problem{" +
-                "pId=" + pId +
-                ", problem='" + question + '\'' +
-                ", answer='" + answer + '\'' +
-                ", bigType=" + bigType +
-                ", smallType='" + smallType + '\'' +
-                '}';
-    }
 }

@@ -2,6 +2,8 @@ package com.zsj.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -11,6 +13,19 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("/pages")
 public class PageController {
+
+    /**
+     * 测试使用，可删除
+     * @return
+     */
+    @RequestMapping("/test1")
+    public String test1(){
+
+        int i = 0;
+        int j = 1/i;
+        return "pages/regist";
+    }
+
 
     @RequestMapping("/regist")
     public String regist(){
@@ -94,5 +109,38 @@ public class PageController {
     @RequestMapping("/allBlog")
     public String allBlog(){
         return "blog/allBlog";
+    }
+
+    /**
+     * 返回当前需要显示的博客页面，并且存入当前显示的博客的id
+     * @param bId
+     * @param request
+     * @return
+     */
+    @RequestMapping("/showBlog")
+    public String showBlog(int bId,HttpServletRequest request){
+        request.getSession().setAttribute("currShowBlogId",bId);
+        return "blog/showBlog";
+    }
+
+    @ResponseBody
+    @RequestMapping("/getBId")
+    public int getBId(HttpServletRequest request){
+        int bId = (Integer)request.getSession().getAttribute("currShowBlogId");
+        return bId;
+    }
+
+
+    @RequestMapping("/allQuestion")
+    public String allQuestion(){
+        return "question/allQuestion";
+    }
+
+    @RequestMapping("/editQuestion")
+    public ModelAndView editQuestion(int pId){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("questionId",pId);
+        modelAndView.setViewName("question/editQuestion");
+        return modelAndView;
     }
 }

@@ -1,0 +1,92 @@
+2019-10-27 19:51:18,380 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@246ae04d: startup date [Sun Oct 27 19:51:18 CST 2019]; root of context hierarchy
+2019-10-27 19:51:18,517 137    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-27 19:51:23,595 5215   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-27 19:51:23,619 5239   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-27 19:51:42,100 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@246ae04d: startup date [Sun Oct 27 19:51:42 CST 2019]; root of context hierarchy
+2019-10-27 19:51:42,219 119    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-27 19:51:44,857 2757   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-27 19:51:44,883 2783   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-27 20:06:19,565 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@246ae04d: startup date [Sun Oct 27 20:06:19 CST 2019]; root of context hierarchy
+2019-10-27 20:06:19,692 127    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-27 20:06:22,292 2727   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-27 20:06:22,350 2785   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-27 20:18:31,764 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Sun Oct 27 20:18:31 CST 2019]; root of context hierarchy
+2019-10-27 20:18:31,863 99     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-27 20:19:33,826 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Sun Oct 27 20:19:33 CST 2019]; root of context hierarchy
+2019-10-27 20:19:33,986 160    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-27 20:20:05,781 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Sun Oct 27 20:20:05 CST 2019]; root of context hierarchy
+2019-10-27 20:20:05,865 84     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-27 20:20:07,650 1869   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-27 20:20:07,671 1890   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-28 10:18:41,136 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Mon Oct 28 10:18:41 CST 2019]; root of context hierarchy
+2019-10-28 10:18:41,256 120    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-28 10:18:45,432 4296   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-28 10:18:45,472 4336   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 22:47:10,434 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 22:47:10 CST 2019]; root of context hierarchy
+2019-10-30 22:47:10,578 144    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 22:47:14,660 4226   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 22:47:14,721 4287   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 22:47:36,377 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 22:47:36 CST 2019]; root of context hierarchy
+2019-10-30 22:47:36,470 93     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 22:47:38,317 1940   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 22:47:38,354 1977   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 22:47:38,729 2352   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-10-30 22:47:38,796 2419   [           main] INFO  c.support.SQLErrorCodesFactory  - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-10-30 22:47:56,596 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 22:47:56 CST 2019]; root of context hierarchy
+2019-10-30 22:47:56,704 108    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 22:47:58,380 1784   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 22:47:58,393 1797   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 22:48:54,377 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 22:48:54 CST 2019]; root of context hierarchy
+2019-10-30 22:48:54,483 106    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 22:48:56,261 1884   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 22:48:56,272 1895   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:00:35,171 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:00:35 CST 2019]; root of context hierarchy
+2019-10-30 23:00:35,295 124    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:00:38,447 3276   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:00:38,586 3415   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:00:43,825 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:00:43 CST 2019]; root of context hierarchy
+2019-10-30 23:00:43,913 88     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:00:46,475 2650   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:00:46,501 2676   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:01:01,595 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:01:01 CST 2019]; root of context hierarchy
+2019-10-30 23:01:01,695 100    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:01:03,542 1947   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:01:03,561 1966   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:01:07,673 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:01:07 CST 2019]; root of context hierarchy
+2019-10-30 23:01:07,766 93     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:01:09,754 2081   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:01:09,787 2114   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:02:37,344 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:02:37 CST 2019]; root of context hierarchy
+2019-10-30 23:02:37,447 103    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:02:39,453 2109   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:02:39,471 2127   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:02:39,831 2487   [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-10-30 23:02:39,883 2539   [           main] INFO  c.support.SQLErrorCodesFactory  - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-10-30 23:03:16,058 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:03:16 CST 2019]; root of context hierarchy
+2019-10-30 23:03:16,156 98     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:03:18,283 2225   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:03:18,300 2242   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:03:23,427 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:03:23 CST 2019]; root of context hierarchy
+2019-10-30 23:03:23,536 109    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:03:25,826 2399   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:03:25,841 2414   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-30 23:04:38,021 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Wed Oct 30 23:04:38 CST 2019]; root of context hierarchy
+2019-10-30 23:04:38,105 84     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-30 23:04:40,049 2028   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-30 23:04:40,070 2049   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-10-31 08:58:08,267 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Thu Oct 31 08:58:08 CST 2019]; root of context hierarchy
+2019-10-31 08:58:08,381 114    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-10-31 08:58:11,411 3144   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-10-31 08:58:11,424 3157   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-11-01 18:22:27,738 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Fri Nov 01 18:22:27 CST 2019]; root of context hierarchy
+2019-11-01 18:22:27,867 129    [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-11-01 18:22:31,170 3432   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-11-01 18:22:31,184 3446   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-11-01 18:22:36,355 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Fri Nov 01 18:22:36 CST 2019]; root of context hierarchy
+2019-11-01 18:22:36,440 85     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-11-01 18:22:38,221 1866   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-11-01 18:22:38,252 1897   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2019-11-01 18:22:42,982 0      [           main] INFO  ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17550481: startup date [Fri Nov 01 18:22:42 CST 2019]; root of context hierarchy
+2019-11-01 18:22:43,063 81     [           main] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [ApplicationConfig.xml]
+2019-11-01 18:22:44,649 1667   [           main] ERROR aba.druid.pool.DruidDataSource  - testWhileIdle is true, validationQuery not set
+2019-11-01 18:22:44,665 1683   [           main] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited

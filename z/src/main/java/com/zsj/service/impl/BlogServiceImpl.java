@@ -54,6 +54,11 @@ public class BlogServiceImpl implements BlogService {
         return pageBean;
     }
 
+    @Override
+    public Blog selectBlog(int id) {
+        return blogDao.selectBlog(id);
+    }
+
 
     /**
      * 将字符串表示的博客类型信息转化为Map类型，方便存入数据库

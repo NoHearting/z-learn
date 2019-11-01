@@ -34,6 +34,21 @@ public interface BlogDao {
     @Select("select count(*) from blog")
     int totalCount();
 
+    /**
+     * 分页查询博客信息，不包括内容
+     * @param searchValue
+     * @param beginIndex
+     * @param pageCount
+     * @return
+     */
     @SelectProvider(type = BlogProvider.class,method = "findBlogs")
     List<Blog> selectBlogs(@Param("searchValue") String searchValue, @Param("beginIndex") int beginIndex, @Param("pageCount") int pageCount);
+
+    /**
+     * 根据id查询博客内容
+     * @param id
+     * @return
+     */
+    @Select("select * from blog where bId = #{id}")
+    Blog selectBlog(int id);
 }

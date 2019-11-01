@@ -6,7 +6,7 @@
  */
 function load(searchValue,currPage,isRandom){
     var pageCount = $(".select-size").val();
-    $.post("../choose/questions",{searchValue:searchValue,currPage:currPage,pageCount:pageCount,isRandom:isRandom},function (pageBean) {
+    $.post("/z/question/questions",{searchValue:searchValue,currPage:currPage,pageCount:pageCount,isRandom:isRandom},function (pageBean) {
         //设置页码显示信息
         var lis = "";
         var firstPage;
@@ -58,7 +58,8 @@ function load(searchValue,currPage,isRandom){
 
 
         //展示数据
-        var htmlData = "";
+        var container = $("#questions-show");
+        container.empty();
         for(var i = 0;i<pageBean.list.length;i++){
             var problem = pageBean.list[i];
             var div =
@@ -66,19 +67,28 @@ function load(searchValue,currPage,isRandom){
                 '     <div class="toggle-title">\n' +
                 '        '+problem.question+'\n' +
                 '     </div>\n' +
-                '     <div class="toggle-content" >\n' +
-                '     <p>' +
-                '        Our academics cooperate across disciplines to create exciting new courses and develop novel approaches to research issues. Our interdisciplinary ethos has helped us to become a national leader in many subject areas.' +
-                '     </p>\n' +
-                '     <div class="clearfix"></div>\n' +
+                '     <div class="toggle-content" id="'+problem.pId+'">\n' +
                 '     </div>\n' +
                 '</div>';
-            htmlData += div;
+            container.append(div);
+            separateStrAndSet(problem);
         }
-        $("#questions-show").html(htmlData);
+
 
         loadQuestionJs();
 
 
     });
+}
+
+function separateStrAndSet(problem) {
+
+    var selector = "#"+problem.pId;
+    var content = $(selector);
+    var strs = problem.answer.split('*-*');
+    for(var i = 0;i<strs.length;i++){
+        var p = '<p>'+strs[i]+'</p>'
+        content.append(p);
+    }
+    content.append('<div class="clearfix"></div>');
 }
