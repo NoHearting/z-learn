@@ -32,7 +32,6 @@ public class QuestionProvider {
 
     public String selectQuestionsFinishedOr(@Param("searchValue") String searchValue, @Param("beginIndex") int beginIndex, @Param("pageCount") int pageCount,@Param("selector") String selector){
 
-        System.out.println("------------"+selector+"----------------");
         String limit = " limit "+beginIndex+", "+pageCount;
         String sql =  new SQL(){
             {
@@ -53,7 +52,6 @@ public class QuestionProvider {
 
             }
         }.toString()+limit;
-        System.out.println(sql);
         return sql;
     }
 
@@ -73,7 +71,6 @@ public class QuestionProvider {
                 }
             }
         }.toString();
-        System.out.println("totalCountAndSelected:  "+sql);
         return sql;
     }
 

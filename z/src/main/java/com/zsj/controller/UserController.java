@@ -2,6 +2,7 @@ package com.zsj.controller;
 
 import com.zsj.domain.User;
 import com.zsj.enums.Status;
+import com.zsj.response.ResponseCheckLogin;
 import com.zsj.response.ResponseInfo;
 import com.zsj.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,10 +60,12 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("/checkLogin")
-    public User checkLogin(HttpServletRequest request){
+    public ResponseCheckLogin<User> checkLogin(HttpServletRequest request){
         System.out.println("checkLogin");
         User user = (User) request.getSession().getAttribute("user");
-        System.out.println(user);
-        return user;
+        if(user!=null){
+            return new ResponseCheckLogin<>(Status.NORMAL,user);
+        }
+        return new ResponseCheckLogin<>(Status.ERROR,null);
     }
 }

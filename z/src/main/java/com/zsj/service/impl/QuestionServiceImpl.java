@@ -2,11 +2,14 @@ package com.zsj.service.impl;
 
 import com.zsj.dao.QuestionDao;
 import com.zsj.domain.PageBean;
-import com.zsj.domain.Problem;
+import com.zsj.domain.question.Problem;
+import com.zsj.domain.question.QuestionClassify;
+import com.zsj.domain.question.QuestionTags;
 import com.zsj.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -79,7 +82,6 @@ public class QuestionServiceImpl implements QuestionService {
             problems = questionDao.selectQuestionsFinishedOr(searchValue, beginIndex, pageCount,selector);
             pageBean.setList(problems);
             pageBean.setPageSize(pageCount);
-            System.out.println(problems);
             return pageBean;
         } catch (Exception e) {
             e.printStackTrace();
@@ -103,10 +105,57 @@ public class QuestionServiceImpl implements QuestionService {
         questionDao.deleteQuestionById(pId);
     }
 
+    @Override
+    public List<QuestionTags> selectQuestionTags(int pId) {
+        return questionDao.selectQuestionTagsById(pId);
+    }
+
+    @Override
+    public List<QuestionClassify> selectQuestionsClassify() {
+        List<QuestionClassify> list = questionDao.selectQuestionsClassify();
+        return list;
+    }
+
+
+    @Override
+    public boolean insertQuestion(String question, String answer, int isFinished, String tags) {
+        try{
+            Problem problem = new Problem(question,answer,isFinished);
+            questionDao.insertQuestion(problem);
+            for(Integer i:parseStringToIntArray(tags)){
+                questionDao.insertProblemTypeInfo(problem.getpId(),i);
+            }
+            return true;
+        }catch (Exception e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 将字符串中的换行符‘\n’替换为‘*-*’便于前端分离显示
+     * @param problems
+     */
     private void replaceProblemAnswerStr(List<Problem> problems){
         for(Problem problem:problems){
-            System.out.println(problem);
             problem.setAnswer(problem.getAnswer().replaceAll("\n","*-*"));
         }
+    }
+
+    /**
+     * 将字符串转化为整形数组
+     * @param origin
+     * @return
+     */
+    private List<Integer> parseStringToIntArray(String origin){
+        origin = origin.replaceAll("]","");
+        origin = origin.replaceAll("\\[","");
+        System.out.println(origin);
+        String[] split = origin.split(",");
+        List<Integer> listInt = new ArrayList<>();
+        for(String str:split){
+            listInt.add(Integer.parseInt(str));
+        }
+        return listInt;
     }
 }

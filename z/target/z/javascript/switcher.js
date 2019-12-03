@@ -96,7 +96,7 @@ $(document).ready(function() {
     setColor: function(e) {
         var t = switchColor.colorObj;
         $.cookie(t.colorCookie, e);
-        $(t.headLink).attr("href", "stylesheets/colors/" + e + ".css");
+        $(t.headLink).attr("href", "/z/stylesheets/colors/" + e + ".css");
         
         $(t.switchClass).removeClass(t.currentClass);
         $("#" + e).addClass(t.currentClass);

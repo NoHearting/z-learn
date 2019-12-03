@@ -2,12 +2,17 @@ package com.zsj.controller;
 
 
 import com.zsj.domain.PageBean;
-import com.zsj.domain.Problem;
+import com.zsj.domain.question.Problem;
+import com.zsj.domain.question.QuestionClassify;
+import com.zsj.domain.question.QuestionTags;
 import com.zsj.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/question")
@@ -20,13 +25,6 @@ public class QuestionController {
     @ResponseBody
     @RequestMapping("/questions")
     public PageBean<Problem> selectQuestions(String searchValue, int currPage, int pageCount, boolean isRandom,String selector){
-        System.out.println("开始");
-        System.out.println(searchValue);
-        System.out.println(currPage);
-        System.out.println(pageCount);
-        System.out.println(isRandom);
-
-        System.out.println("-----------------------------------");
         PageBean<Problem> pageBean = questionService.selectQuestions(searchValue, currPage, pageCount, isRandom);
 
         return pageBean;
@@ -35,13 +33,12 @@ public class QuestionController {
     @ResponseBody
     @RequestMapping("/selectedOr")
     public PageBean selectQuestionsSelectedOr(String searchValue, int currPage, int pageCount,String selector){
-        System.out.println(selector);
         PageBean<Problem> pageBean = questionService.selectQuestionsFinishedOr(searchValue, currPage, pageCount,selector);
-        System.out.println(pageBean);
         return pageBean;
     }
 
 
+    @ResponseBody
     @RequestMapping("/saveQuestion")
     public String saveQuestion(){
         return null;
@@ -57,7 +54,6 @@ public class QuestionController {
     @ResponseBody
     @RequestMapping("/changeQuestionById")
     public boolean changeQuestionById(Problem problem){
-        System.out.println(problem);
         questionService.changeQuestionById(problem);
         return true;
     }
@@ -69,4 +65,35 @@ public class QuestionController {
         return true;
     }
 
+    @ResponseBody
+    @RequestMapping("/selectQuestionTags")
+    public List<QuestionTags> selectQuestionTags(int pId){
+        List<QuestionTags> questionTags = questionService.selectQuestionTags(pId);
+//        System.out.println(questionTags);
+        return questionTags;
+    }
+
+    /**
+     * 查询问题的分类信息，用于选择问题的分类
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/selectQuestionsClassify")
+    public List<QuestionClassify> selectQuestionsClassify(){
+        List<QuestionClassify> list =  questionService.selectQuestionsClassify();
+        return list;
+    }
+
+
+    @ResponseBody
+    @RequestMapping("/insertQuestion")
+    public String insertQuestion(String question,String answer,int isFinished,String tags){
+        boolean b = questionService.insertQuestion(question, answer, isFinished, tags);
+        if(b){
+            return "success";
+        }else{
+            return "false";
+        }
+
+    }
 }

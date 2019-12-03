@@ -1,6 +1,6 @@
 package com.zsj.dao;
 
-import com.zsj.domain.Problem;
+import com.zsj.domain.question.Problem;
 import com.zsj.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;

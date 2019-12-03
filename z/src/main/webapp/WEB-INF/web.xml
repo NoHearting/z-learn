@@ -15,12 +15,18 @@
     </init-param>
     <!-- 服务器启动的时候，让DispatcherServlet对象创建 -->
     <load-on-startup>1</load-on-startup>
+
+
    </servlet>
    <servlet-mapping>
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
    </servlet-mapping>
 
+  <!--配置默认访问页面-->
+    <welcome-file-list>
+      <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
   <!-- 配置解决中文乱码的过滤器 -->
   <filter>
     <filter-name>characterEncodingFilter</filter-name>

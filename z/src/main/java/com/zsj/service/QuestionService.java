@@ -1,11 +1,11 @@
 package com.zsj.service;
 
 import com.zsj.domain.PageBean;
-import com.zsj.domain.Problem;
-import org.springframework.stereotype.Service;
+import com.zsj.domain.question.Problem;
+import com.zsj.domain.question.QuestionClassify;
+import com.zsj.domain.question.QuestionTags;
 
 import java.util.List;
-
 
 
 public interface QuestionService {
@@ -48,4 +48,19 @@ public interface QuestionService {
      * @param pId
      */
     void deleteQuestionById(int pId);
+
+    /**
+     * 根据id查询一个“问题”的标签
+     * @param pId
+     * @return
+     */
+    List<QuestionTags> selectQuestionTags(int pId);
+
+    /**
+     * 查询所有的问题分类信息
+     * @return
+     */
+    List<QuestionClassify> selectQuestionsClassify();
+
+    boolean insertQuestion(String question, String answer, int isFinished, String tags);
 }

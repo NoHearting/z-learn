@@ -52,8 +52,9 @@ public class PageController {
     }
 
     @RequestMapping("/course")
-    public String course(){
-        System.out.println("course");
+    public String course(int initKey,HttpServletRequest request){
+        System.out.println("pages:"+initKey);
+        request.getSession().setAttribute("initKey",initKey);
         return "pages/course";
     }
 
@@ -68,7 +69,9 @@ public class PageController {
     }
 
     @RequestMapping("/language")
-    public String language(){
+    public String language(int initKey,HttpServletRequest request){
+        System.out.println("pages:"+initKey);
+        request.getSession().setAttribute("initKey",initKey);
         return "pages/language";
     }
 

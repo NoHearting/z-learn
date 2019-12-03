@@ -79,7 +79,6 @@
                                 <ul class="menu" >
                                     <li class="active">
                                         <a href="#">首页</a>
-
                                     </li>
                                     <li>
                                         <a href="#">计算机语言</a>
@@ -175,23 +174,16 @@
                 <div class="container">
                     <div class="content-page-wrap">
                         <ul class="flat-filter-isotype style1 text-center ">
-                            <li class="active"><a href="#" data-filter="*">全部</a></li>
+                            <li class="active"><a id="all-choose" href="#" data-filter="*">全部</a></li>
                             <li><a href="#" data-filter=".Design">数组 </a></li>
                             <li><a href="#" data-filter=".Marketing"> 指针</a></li>
                             <li><a href="#" data-filter=".Photography"> 结构体 </a></li>
                             <li><a href="#" data-filter=".Leadership ">链表</a></li>
                             <li><a href="#" data-filter=".Business ">二维数组</a></li>
                         </ul>
-                        <div class="flat-courses clear-sub-columns clearfix isotope-courses style2">
+                        <div id="all-blog-container" class="flat-courses clear-sub-columns clearfix isotope-courses style2">
                             <div class="course style2 one-of-three text-005eea Marketing Design ">
-                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
-                                    <div class="course-img img-vline">
-                                        <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-gird-v2-1.png" alt="bookflare"></a>
-                                        <div class="overlay">
-                                            <span class="vline"></span>
-                                            <span class="vline vline-bottom"></span>
-                                        </div>
-                                    </div>
+                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">
                                     <div class="course-content">
                                         <div class="text-wrap border-bt-e6f3ff">
                                             <h6 class="title"><a href="#">Programming Techniques</a></h6>
@@ -214,16 +206,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> <!-- /.course -->
+                            </div>
                             <div class="course style2 one-of-three text-ea0042 Marketing ">
                                 <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
-                                    <div class="course-img img-vline">
-                                        <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-gird-v2-2.png" alt="bookflare"></a>
-                                        <div class="overlay">
-                                            <span class="vline"></span>
-                                            <span class="vline vline-bottom"></span>
-                                        </div>
-                                    </div>
+
                                     <div class="course-content">
                                         <div class="text-wrap border-bt-e6f3ff">
                                             <h6 class="title"><a href="#">Complete JavaScript Course</a></h6>
@@ -249,13 +235,7 @@
                             </div> <!-- /.course -->
                             <div class="course style2 one-of-three text-00dcea Marketing Design">
                                 <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
-                                    <div class="course-img img-vline">
-                                        <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-gird-v2-3.png" alt="bookflare"></a>
-                                        <div class="overlay">
-                                            <span class="vline"></span>
-                                            <span class="vline vline-bottom"></span>
-                                        </div>
-                                    </div>
+
                                     <div class="course-content">
                                         <div class="text-wrap border-bt-e6f3ff">
                                             <h6 class="title"><a href="#">Learning Python Data Analysis</a></h6>
@@ -281,13 +261,7 @@
                             </div> <!-- /.course -->
                             <div class="course style2 one-of-three text-005eea Business">
                                 <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
-                                    <div class="course-img img-vline">
-                                        <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-gird-v2-4.png" alt="bookflare"></a>
-                                        <div class="overlay">
-                                            <span class="vline"></span>
-                                            <span class="vline vline-bottom"></span>
-                                        </div>
-                                    </div>
+
                                     <div class="course-content">
                                         <div class="text-wrap border-bt-e6f3ff">
                                             <h6 class="title"><a href="#">jQuery Mobile for Beginners</a></h6>
@@ -313,13 +287,7 @@
                             </div> <!-- /.course -->
                             <div class="course style2 one-of-three text-ea0042 Design">
                                 <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
-                                    <div class="course-img img-vline">
-                                        <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-gird-v2-5.png" alt="bookflare"></a>
-                                        <div class="overlay">
-                                            <span class="vline"></span>
-                                            <span class="vline vline-bottom"></span>
-                                        </div>
-                                    </div>
+
                                     <div class="course-content">
                                         <div class="text-wrap border-bt-e6f3ff">
                                             <h6 class="title"><a href="#">Web Technology</a></h6>
@@ -345,13 +313,7 @@
                             </div> <!-- /.course -->
                             <div class="course style2 one-of-three text-00dcea Leadership">
                                 <div class="course-border border-f-e6f3ff border-ra4 transition-vline">   
-                                    <div class="course-img img-vline">
-                                        <a href="#"><img src="${pageContext.request.contextPath}/images/courses/courses-gird-v2-6.png" alt="bookflare"></a>
-                                        <div class="overlay">
-                                            <span class="vline"></span>
-                                            <span class="vline vline-bottom"></span>
-                                        </div>
-                                    </div>
+
                                     <div class="course-content">
                                         <div class="text-wrap border-bt-e6f3ff">
                                             <h6 class="title"><a href="#">Special Education Teaching</a></h6>
@@ -374,7 +336,163 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> <!-- /.course -->                      
+                            </div>
+                            <div class="course style2 one-of-three text-00dcea Leadership">
+                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">
+
+                                    <div class="course-content">
+                                        <div class="text-wrap border-bt-e6f3ff">
+                                            <h6 class="title"><a href="#">Special Education Teaching</a></h6>
+                                            <p class="teacher"><a href="#">Rosy Janner</a></p>
+                                            <p class="description">Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.
+                                            </p>
+                                        </div>
+                                        <div class="wrap-rating-price">
+                                            <div class="wrap-rating">
+                                                <ul class="list star-list">
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star-half"></i></li>
+                                                </ul>
+                                                <span>4.8  (7,982)</span>
+                                            </div>
+                                            <span class="price v2">$89.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course style2 one-of-three text-00dcea Leadership">
+                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">
+
+                                    <div class="course-content">
+                                        <div class="text-wrap border-bt-e6f3ff">
+                                            <h6 class="title"><a href="#">Special Education Teaching</a></h6>
+                                            <p class="teacher"><a href="#">Rosy Janner</a></p>
+                                            <p class="description">Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.
+                                            </p>
+                                        </div>
+                                        <div class="wrap-rating-price">
+                                            <div class="wrap-rating">
+                                                <ul class="list star-list">
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star-half"></i></li>
+                                                </ul>
+                                                <span>4.8  (7,982)</span>
+                                            </div>
+                                            <span class="price v2">$89.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course style2 one-of-three text-00dcea Leadership">
+                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">
+
+                                    <div class="course-content">
+                                        <div class="text-wrap border-bt-e6f3ff">
+                                            <h6 class="title"><a href="#">Special Education Teaching</a></h6>
+                                            <p class="teacher"><a href="#">Rosy Janner</a></p>
+                                            <p class="description">Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.
+                                            </p>
+                                        </div>
+                                        <div class="wrap-rating-price">
+                                            <div class="wrap-rating">
+                                                <ul class="list star-list">
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star-half"></i></li>
+                                                </ul>
+                                                <span>4.8  (7,982)</span>
+                                            </div>
+                                            <span class="price v2">$89.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course style2 one-of-three text-00dcea Leadership">
+                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">
+
+                                    <div class="course-content">
+                                        <div class="text-wrap border-bt-e6f3ff">
+                                            <h6 class="title"><a href="#">Special Education Teaching</a></h6>
+                                            <p class="teacher"><a href="#">Rosy Janner</a></p>
+                                            <p class="description">Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.
+                                            </p>
+                                        </div>
+                                        <div class="wrap-rating-price">
+                                            <div class="wrap-rating">
+                                                <ul class="list star-list">
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star-half"></i></li>
+                                                </ul>
+                                                <span>4.8  (7,982)</span>
+                                            </div>
+                                            <span class="price v2">$89.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course style2 one-of-three text-00dcea Leadership">
+                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">
+
+                                    <div class="course-content">
+                                        <div class="text-wrap border-bt-e6f3ff">
+                                            <h6 class="title"><a href="#">Special Education Teaching</a></h6>
+                                            <p class="teacher"><a href="#">Rosy Janner</a></p>
+                                            <p class="description">Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.
+                                            </p>
+                                        </div>
+                                        <div class="wrap-rating-price">
+                                            <div class="wrap-rating">
+                                                <ul class="list star-list">
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star-half"></i></li>
+                                                </ul>
+                                                <span>4.8  (7,982)</span>
+                                            </div>
+                                            <span class="price v2">$89.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course style2 one-of-three text-00dcea Leadership">
+                                <div class="course-border border-f-e6f3ff border-ra4 transition-vline">
+
+                                    <div class="course-content">
+                                        <div class="text-wrap border-bt-e6f3ff">
+                                            <h6 class="title"><a href="#">Special Education Teaching</a></h6>
+                                            <p class="teacher"><a href="#">Rosy Janner</a></p>
+                                            <p class="description">Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.
+                                            </p>
+                                        </div>
+                                        <div class="wrap-rating-price">
+                                            <div class="wrap-rating">
+                                                <ul class="list star-list">
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star"></i></li>
+                                                    <li><i class="far fa-star-half"></i></li>
+                                                </ul>
+                                                <span>4.8  (7,982)</span>
+                                            </div>
+                                            <span class="price v2">$89.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div> <!-- /.flat-courses -->
                     </div> <!-- /.content-page-wrap -->
                     <div class="flat-paginations">
@@ -391,42 +509,7 @@
                 </div> <!-- /.container -->
             </div> <!-- /.content-wrap -->
 
-            <section class="flat-feature parallax parallax2"> 
-                <div class="container">
-                    <div class="row flat-iconbox style1">
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 left">
-                                <div class="iconbox-icon">
-                                    <span class="icon-book"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">C++</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 center">
-                                <div class="iconbox-icon">
-                                    <span class="icon-people"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">Java</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="iconbox style1 right">
-                                <div class="iconbox-icon">
-                                    <span class="icon-key"></span>
-                                </div>
-                                <div class="iconbox-content">
-                                    <h5 class="title">Arithmetic</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             <footer id="footer">
                 <div class="container">
@@ -720,12 +803,51 @@
         <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
         <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
-       <script src="${pageContext.request.contextPath}/javascript/custom.js"></script>
+       <script src="${pageContext.request.contextPath}/javascript/customFuc.js"></script>
         <script>
             $(function () {
+                //动态加载导航栏
+                loadHeaderTab();
                 //检查登录状态
-                checkLogin("${pageContext.request.contextPath}");
-            })
+                checkLogin();
+
+                //加载页面信息
+                loadLanguageInfo();
+            });
+            //加载当前页面信息
+            function loadLanguageInfo() {
+                $.get("${pageContext.request.contextPath}/language/getLanguageInfo",{},function (pageBean) {
+                    var blog_container = $("#all-blog-container");
+                    var all_item = $(".course");
+                    var all_title = $("#all-blog-container .title a");
+                    var all_tags = $("#all-blog-container .teacher a");
+                    var all_descripion = $("#all-blog-container .description");
+                    var all_start_list = $("#all-blog-container .star-list");
+                    var all_view_times = $(".wrap-rating span");
+                    var all_status = $("#all-blog-container .price");
+                    for(var i = 0;i<12;i++){
+                        if(i>=pageBean.list.length){
+                            // $(all_item[i]).css("display","none");
+                            $(all_item[i]).remove();
+                        }else{
+                            // $(all_item[i]).css("display","block");
+                            $(all_title[i]).text(pageBean.list[i].title);
+                            $(all_tags[i]).text("C++");     //应该动态获得
+                            $(all_descripion[i]).text(pageBean.list[i].content.substr(0,20));
+                            var read_times = pageBean.list[i].readTimes/1000+1;
+                            var items = '';
+                            for(var j = 0;j<read_times;j++){
+                                items += '<li><i class="far fa-star"></i></li>';
+                            }
+                            $(all_start_list[i]).html(items);
+                            $(all_view_times[i]).text("已阅读："+pageBean.list[i].readTimes);
+                            $(all_status[i]).text("finished");
+                        }
+                    }
+                    $(".flat-filter-isotype .active").click();
+                });
+            }
+
         </script>
 
     </body>

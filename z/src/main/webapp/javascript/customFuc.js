@@ -1,17 +1,17 @@
 
 //检查用户是否登录
 function  checkLogin() {
-    var path = +"/z/user/checkLogin";
-    $.get(path,{},function (data) {
 
-        if(data == null || data == ""){
+    $.get("/z/user/checkLogin",{},function (data) {
+
+        if(data.status == "ERROR"){
             var questUrl = "/z/pages/login";
             $("#login").attr("href",questUrl).text("登录");
             $("#loginStatus").text("未登录");
         }else{
             var questUrl = "/z/pages/logout";
             $("#login").attr("href",questUrl).text("注销");
-            $("#loginStatus").text(data.username);
+            $("#loginStatus").text(data.obj.username);
         }
 
     });
@@ -133,3 +133,46 @@ function loadBlog(searchValue,currPage) {
 
 }
 
+
+
+/**
+ * 加载头部导航栏信息
+ */
+function  loadHeaderTab() {
+
+    $.get("/z/question/selectQuestionsClassify",{},function (classify) {
+        var firstItem = '<li class="active">\n' +
+            '<a href="#">首页</a>\n' +
+            '</li>';
+        var headTab = $("#main-nav .menu");
+        headTab.empty();
+        headTab.append(firstItem);
+        for(var i = 0;i<classify.length;i++){
+
+            var nextItem = '<li><a href="#">'+classify[i].mainType+'</a>';
+            if(classify[i].questionTags.length>0){
+                nextItem += '<ul class="submenu">';
+            }
+            for(var j = 0;j<classify[i].questionTags.length;j++){
+                nextItem += '<li><a href="/z/pages/language?initKey='+classify[i].questionTags[j].sId+'">'+classify[i].questionTags[j].subType+'</a></li>';
+            }
+            nextItem += '</ul></li>';
+            headTab.append(nextItem);
+
+        }
+        headTab.append('<li >\n' +
+            '                                        <a href="#">关于</a>\n' +
+            '                                        <ul class="submenu">\n' +
+            '                                            <li><a href="/z/pages/FAQs">常见问题</a></li>\n' +
+            '                                            <li><a href="/z/pages/about-us">关于我们</a></li>\n' +
+            '                                            <li class="item-has-child">\n' +
+            '                                                <a href="#">SHOP</a>\n' +
+            '                                                <ul class="submenu">\n' +
+            '                                                    <li ><a href="shop.html">SHOP</a></li>\n' +
+            '                                                    <li><a href="shop-single.html">SHOP SINGLE</a></li>\n' +
+            '                                                </ul>\n' +
+            '                                            </li>\n' +
+            '                                        </ul>\n' +
+            '                                    </li>');
+    });
+}

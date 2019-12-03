@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>所有问题</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">--%>
 
     <!-- Bootstrap  -->
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/bootstrap.css" >
@@ -20,8 +20,8 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/colors/color1.css" id="colors">
 
     <!-- REVOLUTION LAYERS STYLES -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/revolution/css/settings.css">
+    <%--<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/revolution/css/layers.css">--%>
+    <%--<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/revolution/css/settings.css">--%>
 
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="${pageContext.request.contextPath}/images/favicon-apple.png">
@@ -94,21 +94,51 @@
             background-color: rgb(0,168,243);
         }
         .question-header{
-            width: 360px;
+            width: 1400px;
             height:52px;
             margin: auto;
             text-align: center;
+            /*border:1px solid red;*/
+            position: relative;
         }
         .question-title{
             width: 200px;
-            height: 100%;
-            float: left;
+            text-align: center;
+            position: absolute;
+            left:500px;
+            top:10px;
         }
         #select-status{
             width: 150px;
             height:50%;
-            float: left;
+            position: absolute;
+            left: 680px;
+            top:10px;
         }
+        .add-question{
+            width: 100px;
+            height:30px;
+            /*border: 1px solid yellow;*/
+            position: absolute;
+            right:10px;
+            top:10px;
+            text-align: center;
+        }
+        .add-question a{
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            /*color:black;*/
+            display: block;
+            margin: auto;
+            height: 30px;
+            width: 100px;
+            line-height: 30px;
+        }
+        .add-question-a:hover{
+            color:rgb(0,168,243);
+        }
+
         .selector{
             width: 100%;
             height: 50px;
@@ -168,18 +198,18 @@
             background-color: rgb(0,168,243);
             color:white;
         }
-        #dialog-question-title,#dialog_question textarea{
+        #dialog-question-title,#dialog_question-add textarea,#dialog-question-title-add,#dialog_question textarea{
             margin: 10px auto;
         }
-        .question-change{
+        .question-change,.question-change-add{
             width: 100%;
             margin: auto;
         }
-        .question-change input[type='submit']{
+        .question-change input[type='submit'],.question-change-add input[type='submit']{
             position: relative;
             left: 25%;
         }
-        .question-change input[type='button']{
+        .question-change input[type='button'],.question-change-add input[type='button']{
             position: relative;
             left:45%;
         }
@@ -194,19 +224,19 @@
             text-align: center;
             font-size: 20px;
         }
-        .info{
-            margin: 30px auto;
+        .info,.info-add{
+            margin: 10px auto;
             width: 100%;
             position: relative;
         }
 
-        .info p{
+        .info p,.info-add p{
             width: 100%;
             display: block;
             position: relative;
             left:20px;
         }
-        .info p:first-child{
+        .info p:first-child,.info-add p:first-child{
             display: block;
             position: relative;
             left:0px;
@@ -242,9 +272,38 @@
             color:black;
         }
 
-        #question-body{
+        #question-body,#question-body-add{
             color:black;
             height:150px;
+        }
+
+        .labels{
+            float: left;
+            padding: 0 5px;
+        }
+        .labels-item{
+            /*width:40px;*/
+            height:20px;
+            font-size: 14px;
+            color:white;
+            background-color: #0c5460;
+            text-align: center;
+            margin: 0 5px;
+            padding:0 5px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            position: relative;
+            float: left;
+        }
+        .labels-item a{
+            background: url("${pageContext.request.contextPath}/images/problem/close10px.png") no-repeat ;
+            display: block;
+            width: 10px;
+            height:10px;
+            position: absolute;
+            top:-3px;
+            right:-3px;
         }
 
         /*弹窗渲染*/
@@ -276,11 +335,31 @@
             box-shadow: 2px 2px 5px black;
             border-radius: 5px;
         }
+        .tags-choose{
+            width: 100%;
+            height:30px;
+        }
+        .tags-choose span{
+            display: block;
+            float: left;
 
-
+        }
+        #question-tags-select{
+            width:150px;
+            height:25px;
+            padding: 3px;
+            color:black;
+        }
+        #question-tags-select optgroup{
+            font-weight: bold;
+            color:red;
+        }
+        #question-tags-select option{
+            color:black;
+        }
 
         /*图片渲染*/
-        #image-close{
+        #image-close,#image-close-add{
             border-radius: 50%;
             width: 20px;
             height:20px;
@@ -290,7 +369,7 @@
             right:6px;
 
         }
-        #image-close:hover{
+        #image-close:hover,#image-close-add:hover,.labels-item a:hover{
             cursor: pointer;
             /*animation: go-rotate ease-in-out 0.3s;*/
             -webkit-transition-property: transform;
@@ -456,6 +535,10 @@
                 <option value="未完成">未完成</option>
                 <option value="完成">完成</option>
             </select>
+
+            <div class="add-question">
+                <a href="javascript:showWindowAdd()" class="add-question-a">添加问题</a>
+            </div>
         </div>
         <div class="show-table">
             <table id="questions">
@@ -824,26 +907,68 @@
         </form>
     </div>
     <div id="fade" class="black_overlay" style="display: none;"></div>
+    <div id="light-add" class="white_content" style="display: none">
+        <img src="${pageContext.request.contextPath}/images/problem/close.png" alt="关闭" id="image-close-add" onclick="javascript:fadeWindowAdd()">
+        <form action="javascript:void(0)" id="dialog_question-add">
+            <div class="dialog-title">
+                <p>编辑问题</p>
+            </div>
+            <input id="dialog-question-title-add" type="text" placeholder="请输入题目" name="question">
+            <textarea name="answer" id="question-body-add" cols="30" rows="10" placeholder="请输入内容"></textarea>
+            <input type="text" name="pId" value="" style="display: none">
+            <input type="text" name="isFinished" value="" style="display: none">
+            <div class="tags-choose">
+                <span>选择问题标签/分类：</span>
+                <div class="labels">
+                    <%--<div class="labels-item" data-remove="">--%>
+                        <%--<span>开始</span>--%>
+                        <%--<a href=""></a>--%>
+                    <%--</div>--%>
+                </div>
+                <select name="question-tags" id="question-tags-select" onchange="javascript:getLabel()">
+                    <optgroup label="语言">
+                        <option value="1">C++</option>
+                        <option value="2">C</option>
+                        <option value="3">Java</option>
+                    </optgroup>
+
+                </select>
+            </div>
+            <div class="question-change-add">
+                <input type="submit" value="提交">
+                <input type="button" value="取消" onclick="fadeWindowAdd()">
+            </div>
+            <div class="info-add">
+                <p>tips:</p>
+                <p>(1)选择标签可以多选，但不能不选 (2)答案可以不写，可以以后再补上</p>
+            </div>
+            <%--<div class="dialog-footer">--%>
+                <%--<text>序号：<span id="table-id-add">1</span></text>--%>
+                <%--<text>问题id：<span id="question-id-add">1001</span></text>--%>
+            <%--</div>--%>
+        </form>
+    </div>
+    <div id="fade-add" class="black_overlay" style="display: none;"></div>
 
 
 
 
     <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/parallax.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/owl.carousel.min.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/jquery-fancybox.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/imagesloaded.min.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/jquery-isotope.js"></script>
     <script src="${pageContext.request.contextPath}/javascript/waypoints.min.js"></script>
+
+    <%--用于渲染样式开关的js文件--%>
     <script src="${pageContext.request.contextPath}/javascript/jquery.easing.js"></script>
     <script src="${pageContext.request.contextPath}/javascript/jquery.cookie.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/smoothscroll.js"></script>
-    <script src="${pageContext.request.contextPath}/javascript/switcher.js"></script>
     <script src="${pageContext.request.contextPath}/javascript/main.js"></script>
     <script>
         $(function () {
             getAllQuestions(null,1);
+            setSelectedTags();
         });
+        /**
+         * 页面初始化的时候显示一页的问题信息
+         *
+         */
         function getAllQuestions(searchValue,currPage) {
             var selector = $("#select-status").val();
             $.post("${pageContext.request.contextPath}/question/selectedOr",{searchValue:searchValue,currPage:currPage,pageCount:20,isRandom:false,selector:selector},function (pageBean) {
@@ -922,7 +1047,7 @@
                         tr = bgColorStr +
                         '                    <td class="tr-id" id="'+pageBean.list[i].pId+'">'+(i+beginId+1)+'</td>\n' +
                         '                    <td class="tr-question">'+pageBean.list[i].question+'</td>\n' +
-                        '                    <td class="tr-type">C++</td>\n' +
+                        '                    <td class="tr-type">'+setQuestionTagsUpdate(pageBean.list[i].tags)+'</td>\n' +
                         '                    <td class="tr-status">'+status+'</td>\n' +
                         '                    <td class="tr-operator">\n' +
                         '                        <a class="td-edit" href="javascript:showWindow('+(i+beginId+1)+','+pageBean.list[i].pId+')">编辑</a>\n' +
@@ -931,6 +1056,7 @@
                         '                    </td>\n' +
                         '                </tr>';
                     table.append(tr);
+
                 }
 
                 setPageInfo(currPage,pageBean.totalCount,pageBean.totalPage);
@@ -958,6 +1084,9 @@
 
 
         }
+        /**
+         * 筛选问题的条件select选项改变时更新显示信息；
+         */
         function selectorChanged() {
             var searchValue = $("#search-key").val();
             searchValue = searchValue== '' ? null:searchValue;
@@ -978,10 +1107,13 @@
 
             //根据pId获取到具体的信息，并设置到页面
             $.get("${pageContext.request.contextPath}/question/selectOne",{pId:pId},function (problem) {
-                $("#dialog-question-title").val(problem.question);
                 $("#question-body").val(problem.answer);
+                $("#dialog-question-title").val(problem.question);
 
+                $(".question-change,.info").css("display","block");
+                $("#question-body").css("height","150px");
 
+                $("#question-body,#dialog-question-title").attr("readonly",false);
             });
             $("#fade").css("display","block");
             $("#light").slideDown("normal","linear");
@@ -1019,7 +1151,24 @@
             $("#light").slideUp("normal","linear");
             $("#fade").css("display","none");
         }
-        
+
+        /**
+         * ”添加问题“时显示对话框
+         */
+        function showWindowAdd(){
+            $("#fade-add").css("display","block");
+            $("#light-add").slideDown("normal","linear");
+        }
+        /**
+         * 关闭“添加问题”时候显示的对话框
+         */
+        function fadeWindowAdd(){
+            $("#light-add").slideUp("normal","linear");
+            $("#fade-add").css("display","none");
+        }
+
+
+        //提交修改/保存的表单
         $("#dialog_question").submit(function (data) {
             var answer = $("#question-body").val();
             if(answer.length<1){
@@ -1039,6 +1188,42 @@
             });
         });
 
+        //提交添加的表单
+        $("#dialog_question-add").submit(function () {
+            //获取需要提交的信息
+            var question = $("#dialog-question-title-add").val();  //题目
+            if(question.length<1){
+                alert("题目不能为空");
+                return;
+            }
+            var answer = $("#question-body-add").val(); //答案
+            var isFinished = 0;
+            if(answer.length>0){
+                isFinished = 1;
+            }
+            var tagsArray = $(".labels-item");
+            if(tagsArray.length<1){
+                alert("请选择问题标签");
+                return;
+            }
+            var tagsArrayToJson = new Array(tagsArray.length);
+            for(var i = 0;i<tagsArrayToJson.length;i++){
+                tagsArrayToJson[i] = parseInt($(tagsArray[i]).attr("data-remove"));
+            }
+            //js数组转化为Json字符串
+            tagsArrayToJson = JSON.stringify(tagsArrayToJson);
+            $.post("${pageContext.request.contextPath}/question/insertQuestion",{question:question,answer:answer,isFinished:isFinished,tags:tagsArrayToJson},function (info) {
+                if(info=="success"){
+                    fadeWindowAdd();
+                    alert("成功");
+                }
+            });
+        });
+
+        /**
+         * 根据id删除一个“问题”
+         * @param pId
+         */
         function deleteQuestion(pId) {
             var sure = confirm("确定删除？");
             if(sure){
@@ -1052,6 +1237,108 @@
                 });
             }
 
+        }
+
+        /**
+         * 根据id设置“问题”的标签
+         * @param pId
+         * @note 废弃，不再使用  同时移除显示“问题标签”的标签元素的一个用于查找的类属性
+         *      2019年11月6日更新之后不再使用，具体可查2019年11月6日更新信息
+         */
+        function setQuestionTags(pId) {
+
+            $.get("${pageContext.request.contextPath}/question/selectQuestionTags",{pId:pId},function (data) {
+                var selector = "."+pId;
+                var origin_tags = "";
+                for(var i = 0;i<data.length;i++){
+                    origin_tags += data[i].subType;
+                    if(i!=data.length-1){
+                        origin_tags += " | ";
+                    }
+                }
+                $(selector).html(origin_tags);
+
+            });
+        }
+
+        function setQuestionTagsUpdate(tagArray) {
+            var tagsStr = "";
+            for(var i = 0;i<tagArray.length;i++){
+                tagsStr += tagArray[i].subType;
+                if(i != tagArray.length-1){
+                    tagsStr += " | ";
+                }
+            }
+            return tagsStr;
+        }
+
+        /**
+         * 添加“问题”的标签,淡入的方式显示
+         */
+        function getLabel() {
+            if($(".labels-item").length>=3){
+                alert("最多能添加3个标签");
+                return ;
+            }
+            var label_id = $("#question-tags-select").val();
+            var label_text = $("#question-tags-select").find("option:selected").text();
+            var labels_items = $(".labels-item");
+            for(var i = 0;i<labels_items.length;i++){
+                var data = $(labels_items[i]).attr("data-remove");
+                if(data==label_id){
+                    alert("不能添加相同的标签");
+                    return;
+                }
+            }
+
+            var label_item =' <div class="labels-item" data-remove="'+label_id+'" style="display:none">\n' +
+                '                        <span>'+label_text+'</span>\n' +
+                '                        <a href="javascript:removeTags('+label_id+')"></a>\n' +
+                '                    </div>';
+
+            $(".labels").append(label_item);
+            var selector = "div[data-remove="+label_id+"]";
+            $(selector).fadeIn("normal","linear");
+        }
+
+        /**
+         * 删除选中的标签,删除的时候有淡出效果
+         * @param tagsId
+         */
+        function removeTags(tagsId) {
+            var labels_items = $(".labels-item");
+            var i = 0;
+            for(i = 0;i<labels_items.length;i++){
+                var data = $(labels_items[i]).attr("data-remove");
+                if(tagsId == data){
+                    $(labels_items[i]).fadeOut("normal","linear",function () {
+                        this.remove();
+                    });
+                    break;
+                }
+            }
+        }
+
+        /**
+         * 设置“添加问题”的所有问题分类，
+         *      用于添加新问题的时候
+         */
+        function setSelectedTags() {
+            $.get("${pageContext.request.contextPath}/question/selectQuestionsClassify",{},function (tags) {
+                //一次填充选择元素
+                var selectContainer = $("#question-tags-select");
+                selectContainer.empty();
+                for(var i = 0;i<tags.length;i++){
+                    var optgroup = '<optgroup label="'+tags[i].mainType+'">';
+                    for(var j = 0;j<tags[i].questionTags.length;j++){
+                        var option = '<option value="'+tags[i].questionTags[j].sId+'">'+tags[i].questionTags[j].subType+'</option>';
+                        optgroup += option;
+                    }
+                    optgroup += '</optgroup>';
+                    selectContainer.append(optgroup);
+                }
+
+            });
         }
     </script>
 </body>

@@ -51,4 +51,17 @@ public interface BlogDao {
      */
     @Select("select * from blog where bId = #{id}")
     Blog selectBlog(int id);
+
+
+
+    /**
+     * 查询单一分类的所有博客
+     * @param searchValue
+     * @param beginIndex
+     * @param pageCount
+     * @param sId
+     * @return
+     */
+    @SelectProvider(type = BlogProvider.class,method = "selectBlogsAndClassify")
+    List<Blog> selectBlogsClassify(@Param("searchValue") String searchValue, @Param("beginIndex") int beginIndex, @Param("pageCount") int pageCount,@Param("sId") int sId );
 }

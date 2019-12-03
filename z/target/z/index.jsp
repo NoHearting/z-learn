@@ -767,9 +767,14 @@
         <script src="${pageContext.request.contextPath}/javascript/customFuc.js"></script>
         <script>
             $(function () {
+
                 //检查登录状态
                 checkLogin();
-            })
+
+                //动态加载导航栏
+                loadHeaderTab();
+            });
+
         </script>
     </body>
 </html>

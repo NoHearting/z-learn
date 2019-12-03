@@ -5,7 +5,7 @@
   Time: 11:34
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
     <title>Title</title>
@@ -36,13 +36,31 @@
             z-index:1002;
             overflow: auto;
         }
+        .test-scroll{
+            width: 100%;
+            height:3000px;
+            background-color: #00A0D1;
+        }
     </style>
 </head>
 <body>
     <a href="/z/pages/test1">开始</a>
     <a href="/z/pages/allQuestion">所有问题</a>
     <a href="/z/pages/editQuestion?pId=1">编辑问题</a>
-
+    <a href="/z/pages/allBlog">所有博客</a>
+    <a href="javascript:forbidScroll()">禁用鼠标事件</a>
+    <select name="" id="" multiple>
+        <optgroup label="开始">
+            <option value="">上海</option>
+            <option value="">广州</option>
+            <option value="">背景</option>
+        </optgroup>
+        <optgroup label="结束">
+            <option value="">长寿</option>
+            <option value="">澄溪</option>
+            <option value="">海棠</option>
+        </optgroup>
+    </select>
 
 
     <p>示例弹出层：<a href = "JavaScript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">请点这里</a></p>
@@ -53,24 +71,7 @@
 
     <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
     <script>
-        $(function () {
-            $("遮罩层出现按钮").click(function () {
-                $("遮罩层").show();
-                var scroll = $(window).scrollTop();
-                $("html,body").css({
-                    "position":"fixed",
-                    "top":-scroll
-                }); //相对于窗口定位弹窗，距离顶部的距离等于页面滚动的距离，这样就不会出现点击回到顶部的情况
-                // 点击取消弹窗消失
-                $("遮罩层消失按钮").click(function () {
-                    $("遮罩层").hide();
-                    $("html,body").css({
-                        "position":"static",   //去除相对于窗口的定位
-                    });
-                    $(window).scrollTop(scroll);     //恢复浏览器原来的滚动距离
-                })
-            })
-        });
+
 
     </script>
 </body>
