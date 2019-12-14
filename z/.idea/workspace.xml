@@ -7,78 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c6a2d2a-4d0a-43e7-af20-e7d917f71de4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/projectDesign.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/controller/LanguageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/dao/LanguageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/domain/question/QuestionClassify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/domain/question/QuestionTags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/response/ResponseCheckLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/service/LanguageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/service/impl/LanguageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/com/zsj/test/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/problem/close10px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/newAdd/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axis.log" beforeDir="false" afterPath="$PROJECT_DIR$/axis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exploitLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/exploitLog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/dao/BlogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/dao/BlogDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/dao/QuestionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/dao/provider/BlogProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/dao/provider/BlogProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/dao/provider/QuestionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/dao/provider/QuestionProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/domain/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/domain/question/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/zsj/insertdata/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/zsj/test/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/showBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/showBlog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/question/allQuestion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/question/allQuestion.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/custom.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/switcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/switcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/controller/PageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/controller/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/BlogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/BlogDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/BlogProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/BlogProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/dao/provider/QuestionProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/domain/Problem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/service/impl/QuestionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zsj/insertdata/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/blog/showBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/blog/showBlog.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/PageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/BlogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/BlogDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/BlogProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/BlogProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/dao/provider/QuestionProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/domain/Problem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/service/QuestionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/service/impl/QuestionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/pages/language.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/pages/language.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/question/allQuestion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/question/allQuestion.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/z/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/javascript/custom.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/z/javascript/customFuc.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/javascript/customFuc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/javascript/switcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/javascript/switcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/javascript/loadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/javascript/loadPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,10 +35,10 @@
     <session id="-529207384">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="39" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.33" value="1" />
@@ -106,7 +49,8 @@
           <entry key="project.open.time.40" value="4" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.43" value="3" />
+          <entry key="project.open.time.44" value="2" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="7" />
@@ -114,22 +58,23 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.50" value="2" />
           <entry key="project.open.time.51" value="2" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="6" />
+          <entry key="css" value="7" />
           <entry key="custom" value="1" />
           <entry key="html" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="232" />
+          <entry key="java" value="233" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="79" />
-          <entry key="jsp" value="184" />
+          <entry key="js" value="86" />
+          <entry key="jsp" value="190" />
           <entry key="md" value="11" />
           <entry key="png" value="5" />
           <entry key="properties" value="2" />
@@ -139,13 +84,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="6" />
+          <entry key="CSS" value="7" />
           <entry key="HTML" value="5" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="6" />
-          <entry key="JAVA" value="232" />
-          <entry key="JSP" value="184" />
-          <entry key="JavaScript" value="79" />
+          <entry key="JAVA" value="233" />
+          <entry key="JSP" value="190" />
+          <entry key="JavaScript" value="86" />
           <entry key="Markdown" value="11" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
@@ -158,9 +103,9 @@
           <entry key="css" value="37" />
           <entry key="dummy" value="18" />
           <entry key="html" value="9" />
-          <entry key="java" value="16740" />
+          <entry key="java" value="16840" />
           <entry key="js" value="1598" />
-          <entry key="jsp" value="23533" />
+          <entry key="jsp" value="24287" />
           <entry key="md" value="1819" />
           <entry key="xml" value="101" />
         </counts>
@@ -169,8 +114,8 @@
         <counts>
           <entry key="CSS" value="37" />
           <entry key="HTML" value="12" />
-          <entry key="JAVA" value="16740" />
-          <entry key="JSP" value="23530" />
+          <entry key="JAVA" value="16840" />
+          <entry key="JSP" value="24284" />
           <entry key="JavaScript" value="1598" />
           <entry key="Markdown" value="1819" />
           <entry key="PLAIN_TEXT" value="18" />
@@ -189,14 +134,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="847" column="19" lean-forward="true" selection-start-line="847" selection-start-column="19" selection-end-line="847" selection-end-column="19" />
+            <state relative-caret-position="14730">
+              <caret line="491" column="46" selection-start-line="491" selection-start-column="46" selection-end-line="491" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interest.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/course3.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="12" selection-end-line="841" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="391" column="23" lean-forward="true" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -205,64 +175,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/question/allQuestion.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state relative-caret-position="3870">
+              <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#42447#47888#0#HTML" />
-                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#3602#3603#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/LanguageController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exploitLog.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="479">
-                <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="5760">
+              <caret line="192" column="34" selection-start-line="192" selection-start-column="34" selection-end-line="192" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/main.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2880">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-              <folding>
-                <element signature="e#9926#10654#0" />
-                <element signature="e#10703#10876#0" />
-                <element signature="e#10915#12525#0" />
-                <element signature="e#12561#13323#0" />
-                <element signature="e#13361#15214#0" />
-                <element signature="e#15247#16486#0" />
-                <element signature="e#16537#17283#0" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/newAdd/main.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/main.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -271,10 +220,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -325,7 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/exception/SysException.java" />
         <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/test.jsp" />
@@ -338,7 +286,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/exception/resolver/SysExceptionResolver.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/question/editQuestion.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/response/ResponseUploadImages.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/enums/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/response/ResponseCheckLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java" />
@@ -365,17 +312,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/dao/LanguageDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/dao/BlogDao.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/zsj/test/Blog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/service/impl/LanguageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/dao/provider/BlogProvider.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/zsj/test/Useless.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/LanguageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp" />
         <option value="$PROJECT_DIR$/exploitLog.md" />
+        <option value="$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -412,10 +361,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="72" />
-    <option name="y" value="18" />
-    <option name="width" value="1780" />
-    <option name="height" value="999" />
+    <option name="x" value="243" />
+    <option name="y" value="127" />
+    <option name="width" value="1520" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -562,7 +511,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="z" type="b2602c69:ProjectViewProjectNode" />
+              <item name="z" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="z" type="b2602c69:ProjectViewProjectNode" />
+              <item name="z" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="newAdd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="z" type="b2602c69:ProjectViewProjectNode" />
+              <item name="z" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="z" type="b2602c69:ProjectViewProjectNode" />
@@ -606,9 +580,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575359949597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575368150066" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../javaCode/DatabaseDeal/.idea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -619,20 +594,20 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\stylesheets\newAdd" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\javascript\newAdd" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images\problem" />
       <recent name="D:\Java\Project\zlearn\z" />
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images" />
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\WEB-INF\pages" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images\error" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zsj.dao.provider" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images\problem" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp" />
       <recent name="D:\Java\Project\zlearn\z" />
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images\error" />
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\WEB-INF\blog" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images" />
       <recent name="D:\Java\Project\zlearn\z\src\main\webapp\WEB-INF\pages" />
     </key>
   </component>
@@ -726,91 +701,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/z-war" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/z/" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="z:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/z" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_z_2" />
-        <option name="HTTP_PORT" value="80" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="60220" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="z:war" />
-        </option>
-      </method>
-    </configuration>
     <configuration name="z" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/z/" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="z:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/z" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -879,7 +776,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server./z-war" />
       <item itemvalue="Tomcat Server.z" />
       <item itemvalue="Application.Useless" />
       <item itemvalue="JUnit.Question.selectQuestionsClassify" />
@@ -947,7 +843,12 @@
       <workItem from="1573562612812" duration="600000" />
       <workItem from="1574327178269" duration="3355000" />
       <workItem from="1574478393903" duration="20000" />
-      <workItem from="1575355345091" duration="3230000" />
+      <workItem from="1575355345091" duration="10676000" />
+      <workItem from="1576229420439" duration="388000" />
+      <workItem from="1576229858013" duration="296000" />
+      <workItem from="1576233247863" duration="1945000" />
+      <workItem from="1576292397490" duration="34000" />
+      <workItem from="1576326854426" duration="664000" />
     </task>
     <servers />
   </component>
@@ -984,10 +885,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294829000" />
+    <option name="totallyTimeSpent" value="305602000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="99" y="15" width="1780" height="999" extended-state="0" />
+    <frame x="243" y="127" width="1520" height="886" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -996,20 +897,20 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" sideWeight="0.5016234" side_tool="true" weight="0.14897467" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49837664" visible="true" weight="0.22325581" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49837664" visible="true" weight="0.15410958" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="0" weight="0.3295838" />
-      <window_info anchor="bottom" id="Spring" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Spring" order="1" weight="0.32925472" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32925472" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.19328703" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32925472" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.19243604" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23282887" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23248054" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.29922137" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" visible="true" weight="0.22604422" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.30092594" />
+      <window_info active="true" anchor="bottom" id="Run" order="11" visible="true" weight="0.2276964" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
@@ -1041,78 +942,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp</url>
+          <line>165</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/jquery-fancybox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6330">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/imagesloaded.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/jquery-isotope.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/owl.carousel.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4200" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/problem/close.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/switcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="96" column="37" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/jquery.easing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/smoothscroll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/waypoints.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1235,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/BlogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2010">
@@ -1313,13 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4200">
-          <caret line="140" column="10" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -1340,33 +1168,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="183" column="49" lean-forward="true" selection-start-line="183" selection-start-column="49" selection-end-line="183" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/LanguageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="847" column="19" lean-forward="true" selection-start-line="847" selection-start-column="19" selection-end-line="847" selection-end-column="19" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1390,6 +1195,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/exploitLog.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="840">
+            <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/question.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/smoothscroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/switcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="96" column="37" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
+          <folding>
+            <element signature="e#263#269#1" expanded="true" />
+            <element signature="e#348#354#1" expanded="true" />
+            <element signature="e#433#439#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/custom.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-740">
+          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/course.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2880">
@@ -1406,13 +1254,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exploitLog.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="479">
-            <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14730">
+          <caret line="491" column="46" selection-start-line="491" selection-start-column="46" selection-end-line="491" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interest.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/course3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" selection-end-line="841" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3870">
+          <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
+          <folding>
+            <element signature="e#3602#3603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5760">
+          <caret line="192" column="34" selection-start-line="192" selection-start-column="34" selection-end-line="192" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/newAdd/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="391" column="23" lean-forward="true" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

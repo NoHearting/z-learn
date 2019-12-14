@@ -2,14 +2,14 @@
 //检查用户是否登录
 function  checkLogin() {
 
-    $.get("/z/user/checkLogin",{},function (data) {
+    $.get("/user/checkLogin",{},function (data) {
 
         if(data.status == "ERROR"){
-            var questUrl = "/z/pages/login";
+            var questUrl = "/pages/login";
             $("#login").attr("href",questUrl).text("登录");
             $("#loginStatus").text("未登录");
         }else{
-            var questUrl = "/z/pages/logout";
+            var questUrl = "/pages/logout";
             $("#login").attr("href",questUrl).text("注销");
             $("#loginStatus").text(data.obj.username);
         }
@@ -40,7 +40,7 @@ function timestampToTime(timestamp) {
  * @param currPage
  */
 function loadBlog(searchValue,currPage) {
-    $.post("/z/blog/selectBlogs",{searchValue:searchValue,currPage:currPage,pageCount:10},function (pageBean) {
+    $.post("/blog/selectBlogs",{searchValue:searchValue,currPage:currPage,pageCount:10},function (pageBean) {
         //设置页码显示信息
         var lis = "";
         var firstPage;
@@ -99,7 +99,7 @@ function loadBlog(searchValue,currPage) {
                 '    <div class="course-border border-f-e6f3ff border-ra4 clear-sub-columns transition-vline">\n' +
                 '        <div class="course-content">' +
                 '            <div class="text-wrap border-bt-e6f3ff">' +
-                '                <h6 class="title"><a href="/z/pages/showBlog?bId='+pageBean.list[i].bId+'">'+pageBean.list[i].title+'</a></h6>' +
+                '                <h6 class="title"><a href="/pages/showBlog?bId='+pageBean.list[i].bId+'">'+pageBean.list[i].title+'</a></h6>' +
                 '                   <p class="teacher"><a href="#">C++</a> <a href="#">Java</a></p>\n' +
                 '            </div>' +
                 '            <div class="wrap-rating-price">' +
@@ -140,7 +140,7 @@ function loadBlog(searchValue,currPage) {
  */
 function  loadHeaderTab() {
 
-    $.get("/z/question/selectQuestionsClassify",{},function (classify) {
+    $.get("/question/selectQuestionsClassify",{},function (classify) {
         var firstItem = '<li class="active">\n' +
             '<a href="#">首页</a>\n' +
             '</li>';
@@ -154,7 +154,7 @@ function  loadHeaderTab() {
                 nextItem += '<ul class="submenu">';
             }
             for(var j = 0;j<classify[i].questionTags.length;j++){
-                nextItem += '<li><a href="/z/pages/language?initKey='+classify[i].questionTags[j].sId+'">'+classify[i].questionTags[j].subType+'</a></li>';
+                nextItem += '<li><a href="/pages/language?initKey='+classify[i].questionTags[j].sId+'">'+classify[i].questionTags[j].subType+'</a></li>';
             }
             nextItem += '</ul></li>';
             headTab.append(nextItem);
@@ -163,8 +163,8 @@ function  loadHeaderTab() {
         headTab.append('<li >\n' +
             '                                        <a href="#">关于</a>\n' +
             '                                        <ul class="submenu">\n' +
-            '                                            <li><a href="/z/pages/FAQs">常见问题</a></li>\n' +
-            '                                            <li><a href="/z/pages/about-us">关于我们</a></li>\n' +
+            '                                            <li><a href="/pages/FAQs">常见问题</a></li>\n' +
+            '                                            <li><a href="/pages/about-us">关于我们</a></li>\n' +
             '                                            <li class="item-has-child">\n' +
             '                                                <a href="#">SHOP</a>\n' +
             '                                                <ul class="submenu">\n' +

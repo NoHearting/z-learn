@@ -6,7 +6,7 @@
  */
 function load(searchValue,currPage,isRandom){
     var pageCount = $(".select-size").val();
-    $.post("/z/question/questions",{searchValue:searchValue,currPage:currPage,pageCount:pageCount,isRandom:isRandom},function (pageBean) {
+    $.post("/question/questions",{searchValue:searchValue,currPage:currPage,pageCount:pageCount,isRandom:isRandom},function (pageBean) {
         //设置页码显示信息
         var lis = "";
         var firstPage;

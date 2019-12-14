@@ -29,7 +29,20 @@
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.png">
         <link rel="apple-touch-icon-precomposed" href="${pageContext.request.contextPath}/images/favicon-apple.png">
 
+        <style>
+            .website-records{
+                width:98%;
 
+                margin: 0 auto;
+
+                text-align: center;
+
+
+            }
+            .website-records a{
+                color:#718297;
+            }
+        </style>
     </head>  
     <body class="bg-body3"> 
         <div class="boxed">
@@ -48,7 +61,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="flat-info">
                                 <ul>
-                                    <li class="phone"><a href="${pageContext.request.contextPath}/blog/test2">15086998051</a></li>
+                                    <li class="phone"><a href="#">15086998050</a></li>
                                     <li class="mail"><a href="#">313434726@qq.com</a></li>
                                 </ul>
                             </div>
@@ -251,7 +264,7 @@
                                     <span class="icon-contract-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span>
                                 </div>
                                 <div class="iconbox-content">
-                                    <h6 class="title"><a href="${pageContext.request.contextPath}/blog/write">复习资料添加</a></h6>
+                                    <h6 class="title"><a href="${pageContext.request.contextPath}/pages/chooseAddResource">复习资料添加</a></h6>
                                 </div>
                             </div>
                             <div class="iconbox one-of-three style3 flat-text-center active">
@@ -713,12 +726,17 @@
             <div class="bottom bg-15222e">
                 <div class="container">
                     <div class="row">
-                        <div class="  col-md-6">
+                        <div class="col-md-4">
                             <div class="copyright flat-text-left">
                                 <p>© Copyright 2019 <a href="http://120.78.223.0">Z</a>. All Rights Reserved.</p>
                             </div>
                         </div>
-                        <div class="  col-md-6">
+                        <div class="col-md-4">
+                            <div class="website-records copyright">
+                                <a href="http://www.beian.miit.gov.cn/" target="_blank">渝ICP备19016916号</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
                             <div class="widget flat-text-right no-border">
                                 <ul class="list">
                                     <li><a href="#">Privacy</a></li>

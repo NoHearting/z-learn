@@ -146,4 +146,9 @@ public class PageController {
         modelAndView.setViewName("question/editQuestion");
         return modelAndView;
     }
+
+    @RequestMapping("/chooseAddResource")
+    public String chooseAddResource(){
+        return "pages/chooseAddResource";
+    }
 }
