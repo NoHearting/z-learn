@@ -52,20 +52,16 @@ public class UserController {
     @RequestMapping("/login")
     public User login(User user, HttpServletRequest request){
         User u = userService.login(user);
-        System.out.println("User:"+user);
-        System.out.println("Login:"+u);
-        request.getSession().setAttribute("user",u);
         return u;
     }
 
-    @ResponseBody
-    @RequestMapping("/checkLogin")
-    public ResponseCheckLogin<User> checkLogin(HttpServletRequest request){
-        System.out.println("checkLogin");
-        User user = (User) request.getSession().getAttribute("user");
-        if(user!=null){
-            return new ResponseCheckLogin<>(Status.NORMAL,user);
-        }
-        return new ResponseCheckLogin<>(Status.ERROR,null);
-    }
+//    @ResponseBody
+//    @RequestMapping("/checkLogin")
+//    public ResponseCheckLogin<User> checkLogin(HttpServletRequest request){
+//        User user = (User) request.getSession().getAttribute("user");
+//        if(user!=null){
+//            return new ResponseCheckLogin<>(Status.NORMAL,user);
+//        }
+//        return new ResponseCheckLogin<>(Status.ERROR,null);
+//    }
 }

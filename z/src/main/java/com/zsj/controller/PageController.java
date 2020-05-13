@@ -1,6 +1,7 @@
 package com.zsj.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -150,5 +151,24 @@ public class PageController {
     @RequestMapping("/chooseAddResource")
     public String chooseAddResource(){
         return "pages/chooseAddResource";
+    }
+
+    /**
+     * 留言板
+     * @return
+     */
+    @RequestMapping("/infocenter")
+    public String leaveMessage(){
+        return "infocenter/infocenter";
+    }
+
+
+    /**
+     * 微言大义页面
+     * @return
+     */
+    @GetMapping("/motto")
+    public String motto(){
+        return "lifelogging/motto";
     }
 }

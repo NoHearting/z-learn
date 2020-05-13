@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.io.PrintWriter" %><%--
   Created by zsj
   User: zsj
   Date: 2019/10/26
@@ -68,11 +68,22 @@
         <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a></div>
     <div id="fade" class="black_overlay"></div>
 
+    <section>
+        <div>
+            <a href="${pageContext.request.contextPath}/test/timeline">时间轴页面</a>-
+            <a href="${pageContext.request.contextPath}/test/header">测试导航栏</a>
+            <a href="${pageContext.request.contextPath}/test/onlineMusic">在线音乐播放器</a>
+            <a href="${pageContext.request.contextPath}/test/onlineMusicOnIndex">首页测试在线音乐播放</a>
+        </div>
+    </section>
 
     <script src="${pageContext.request.contextPath}/javascript/jquery.min.js"></script>
     <script>
-
+        $(function () {
+            
+        })
 
     </script>
 </body>
 </html>
+

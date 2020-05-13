@@ -2,19 +2,52 @@
 //检查用户是否登录
 function  checkLogin() {
 
-    $.get("/user/checkLogin",{},function (data) {
+    var obj = $.cookie("loginObj");
 
-        if(data.status == "ERROR"){
-            var questUrl = "/pages/login";
-            $("#login").attr("href",questUrl).text("登录");
-            $("#loginStatus").text("未登录");
-        }else{
-            var questUrl = "/pages/logout";
-            $("#login").attr("href",questUrl).text("注销");
-            $("#loginStatus").text(data.obj.username);
-        }
+    if(obj == null || obj == "" || obj == "null"){
+        var questUrl = "/pages/login";
+        $("#login").attr("href",questUrl).text("登录");
+        $("#loginStatus").text("未登录");
+    }else{
+        var objStr = JSON.parse(obj);
+        $("#login").attr("href","javascript:logout();").text("注销");
+        // alert(objStr.username+":"+objStr.id+":"+objStr.password);
+        $("#loginStatus").text(objStr.username);
+    }
+}
 
-    });
+
+// 用户登录后设置cookie
+function addCookieForLogin(obj) {
+    /**
+     * jquery中的cookie并不能存放对象，只能存放字符串
+     * 所以先将对象转化为JSON字符串，再将JSON格式字符串转化为字符串，取出来的时候重现转化为JSON格式字符串
+     * obj从服务器传递过来已经是JSON字符串格式
+     */
+    var objStr = JSON.stringify(obj);
+    $.cookie("loginObj",objStr,{expires:7,path:"/"}); //设置一个名为loginObj的持续七天的cookie
+}
+
+
+
+//按照cookie名删除cookie
+function removeCookie(cookieName) {
+    if($.cookie(cookieName)!=null){
+        $.cookie(cookieName,null);
+    }
+}
+
+//删除登录时创建的cookie，即注销账号的时候调用
+function removeLoginCookie() {
+    if($.cookie("loginObj")!=null){
+        $.cookie("loginObj",null);
+    }
+}
+
+//注销账号
+function logout() {
+    removeCookie("loginObj");
+    checkLogin();
 }
 
 
@@ -176,3 +209,4 @@ function  loadHeaderTab() {
             '                                    </li>');
     });
 }
+

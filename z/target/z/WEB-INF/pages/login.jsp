@@ -16,18 +16,6 @@
 	
 
 
-	<%
-		User user = (User)request.getSession().getAttribute("user");
-		boolean flag;
-		flag = user==null?false:true;
-//		String info = "未登录";
-//		if(flag){
-//		    info = user.getUsername();
-//		}else{
-//		    info = "未登录";
-//		}
-	%>
-
 
 
 
@@ -570,6 +558,8 @@
             $("#formLogin").submit(function (data) {
                 $.get("${pageContext.request.contextPath}/user/login",$(this).serialize(data),function (info) {
                     if(info!=null&&info!=""){ //登录成功后转到主页
+                        addCookieForLogin(info);
+                        // alert(info.username);
                         window.location.href = "${pageContext.request.contextPath}/index.jsp";
                     }else{
                         alert("登录失败,用户名或密码错误！");

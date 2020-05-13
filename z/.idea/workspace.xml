@@ -6,22 +6,568 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c6a2d2a-4d0a-43e7-af20-e7d917f71de4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/newAdd/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/main.css" afterDir="false" />
+    <list default="true" id="5c6a2d2a-4d0a-43e7-af20-e7d917f71de4" name="Default Changelist" comment="框架改变，由之前的个人博客兼学习网站改变为个人网站，博客系统则成为个人网站的一部分。">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zsj/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/infocenter/infocenter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lifelogging/motto.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/demo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/onlineMusic.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/onlineMusicOnIndex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/infocenter/liuyan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/onlineMusic/logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/docs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/load.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/load.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/testAddHeaderAndFooter.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exploitLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/exploitLog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/allBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/allBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/showBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/showBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/regist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/BUGS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/CHANGE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/Gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/css/editormd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/css/editormd.logo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/css/editormd.logo.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/css/editormd.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/css/editormd.preview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/css/editormd.preview.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/editormd.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Bold-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Bold-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-BoldItalic-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-BoldItalic-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-BoldItalic-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Italic-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Italic-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Italic-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Light-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Light-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-LightItalic-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-LightItalic-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-LightItalic-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Regular-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Regular-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/fonts/OpenSans-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/scripts/linenumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/scripts/prettify/Apache-License-2.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/scripts/prettify/lang-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/scripts/prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/styles/jsdoc-default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/styles/prettify-jsdoc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/docs/styles/prettify-tomorrow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/editormd.amd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/editormd.amd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/editormd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/editormd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/@links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/auto-height.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/change-mode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/code-fold.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/custom-keyboard-shortcuts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/custom-toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/define-plugin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/delay-renderer-preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/dynamic-create-editormd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/emoji.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/extends.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/external-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/flowchart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/form-get-value.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/full.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/goto-line.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/html-preview-markdown-to-html-custom-toc-container.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/html-preview-markdown-to-html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/html-tags-decode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/image-cross-domain-upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/image-upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/images/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/images/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/images/editormd-screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/js/require.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/js/sea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/js/seajs-main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/js/zepto.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/katex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/manually-load-modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/multi-editormd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/multi-languages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/on-off.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/onchange.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/onfullscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/onload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/onpreviewing-onpreviewed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/onresize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/onscroll-onpreviewscroll.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/onwatch-onunwatch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/page-break.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/php/cross-domain-upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/php/editormd.uploader.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/php/post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/php/upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/php/upload_callback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/readonly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/resettings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/search-replace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/sequence-diagram.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/set-get-replace-selection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/sync-scrolling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/task-lists.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/test.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/themes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/toolbar-auto-fixed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/use-requirejs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/use-seajs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/examples/use-zepto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/editormd-logo.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/editormd-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/editormd-logo.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/editormd-logo.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/loading@2x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/loading@3x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-favicon-16x16.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-favicon-24x24.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-favicon-32x32.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-favicon-48x48.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-favicon-64x64.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-114x114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-240x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-24x24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-320x320.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-57x57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-64x64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-72x72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/editormd-logo-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/images/logos/vi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/languages/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/languages/zh-tw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/comment/comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/comment/continuecomment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/dialog/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/dialog/dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/display/fullscreen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/display/fullscreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/display/panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/display/placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/display/rulers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/edit/closebrackets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/edit/closetag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/edit/continuelist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/edit/matchbrackets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/edit/matchtags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/edit/trailingspace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/brace-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/comment-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/foldcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/foldgutter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/foldgutter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/indent-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/markdown-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/fold/xml-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/anyword-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/css-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/html-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/javascript-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/show-hint.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/show-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/sql-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/hint/xml-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/lint/coffeescript-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/lint/css-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/lint/javascript-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/lint/json-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/lint/lint.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/lint/lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/lint/yaml-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/merge/merge.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/merge/merge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/mode/loadmode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/mode/multiplex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/mode/multiplex_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/mode/overlay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/mode/simple.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/runmode/colorize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/runmode/runmode-standalone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/runmode/runmode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/runmode/runmode.node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/scroll/annotatescrollbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/scroll/scrollpastend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/scroll/simplescrollbars.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/scroll/simplescrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/search/match-highlighter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/search/matchesonscrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/search/matchesonscrollbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/search/searchcursor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/selection/active-line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/selection/mark-selection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/selection/selection-pointer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/tern/tern.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/tern/tern.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/tern/worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addon/wrap/hardwrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/addons.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/codemirror.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/codemirror.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/lib/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/lib/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/apl/apl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/apl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/asterisk/asterisk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/asterisk/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/clike/clike.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/clike/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/clike/scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/clojure/clojure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/clojure/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/cobol/cobol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/cobol/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/coffeescript/coffeescript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/coffeescript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/commonlisp/commonlisp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/commonlisp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/css/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/css/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/css/less.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/css/less_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/css/scss.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/css/scss_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/css/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/cypher/cypher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/cypher/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/d/d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/d/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dart/dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dart/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/diff/diff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/diff/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/django/django.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/django/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dockerfile/dockerfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dockerfile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dtd/dtd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dtd/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dylan/dylan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/dylan/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ebnf/ebnf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ebnf/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ecl/ecl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ecl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/eiffel/eiffel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/eiffel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/erlang/erlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/erlang/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/forth/forth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/forth/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/fortran/fortran.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/fortran/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/gas/gas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/gas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/gfm/gfm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/gfm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/gfm/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/gherkin/gherkin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/gherkin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/go/go.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/go/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/groovy/groovy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/groovy/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/haml/haml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/haml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/haml/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/haskell/haskell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/haskell/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/haxe/haxe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/haxe/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/htmlembedded/htmlembedded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/htmlembedded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/htmlmixed/htmlmixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/htmlmixed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/http/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/http/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/idl/idl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/idl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/jade/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/jade/jade.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/javascript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/javascript/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/javascript/json-ld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/javascript/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/javascript/typescript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/jinja2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/jinja2/jinja2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/julia/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/julia/julia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/kotlin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/kotlin/kotlin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/livescript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/livescript/livescript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/lua/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/lua/lua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/markdown/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/markdown/markdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/markdown/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/meta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/mirc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/mirc/mirc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/mllike/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/mllike/mllike.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/modelica/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/modelica/modelica.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/nginx/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/nginx/nginx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ntriples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ntriples/ntriples.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/octave/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/octave/octave.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/pascal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/pascal/pascal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/pegjs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/pegjs/pegjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/perl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/perl/perl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/php/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/php/php.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/php/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/pig/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/pig/pig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/properties/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/properties/properties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/puppet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/puppet/puppet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/python/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/python/python.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/q/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/q/q.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/r/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/r/r.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/rpm/changes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/rpm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/rpm/rpm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/rst/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/rst/rst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ruby/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ruby/ruby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/ruby/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/rust/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/rust/rust.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sass/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sass/sass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/scheme/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/scheme/scheme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/shell/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/shell/shell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/shell/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sieve/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sieve/sieve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/slim/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/slim/slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/slim/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/smalltalk/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/smalltalk/smalltalk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/smarty/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/smarty/smarty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/smartymixed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/smartymixed/smartymixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/solr/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/solr/solr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/soy/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/soy/soy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sparql/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sparql/sparql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/spreadsheet/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/spreadsheet/spreadsheet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sql/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/sql/sql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/stex/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/stex/stex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/stex/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/stylus/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/stylus/stylus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tcl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tcl/tcl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/textile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/textile/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/textile/textile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tiddlywiki/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tiddlywiki/tiddlywiki.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tiki/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tiki/tiki.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tiki/tiki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/toml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/toml/toml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tornado/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/tornado/tornado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/turtle/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/turtle/turtle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/vb/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/vb/vb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/vbscript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/vbscript/vbscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/velocity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/velocity/velocity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/verilog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/verilog/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/verilog/verilog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/xml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/xml/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/xml/xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/xquery/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/xquery/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/xquery/xquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/yaml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/yaml/yaml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/z80/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/mode/z80/z80.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/modes.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/3024-day.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/3024-night.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/ambiance-mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/ambiance.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/base16-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/base16-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/blackboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/cobalt.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/colorforth.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/eclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/elegant.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/erlang-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/lesser-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/mbo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/mdn-like.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/midnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/monokai.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/neat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/neo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/night.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/paraiso-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/paraiso-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/pastel-on-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/rubyblue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/solarized.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/the-matrix.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/tomorrow-night-bright.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/tomorrow-night-eighties.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/twilight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/vibrant-ink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/xq-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/xq-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/theme/zenburn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/flowchart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/jquery.flowchart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/marked.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/prettify.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/raphael.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/sequence-diagram.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/lib/underscore.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/code-block-dialog/code-block-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/emoji-dialog/emoji-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/emoji-dialog/emoji.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/goto-line-dialog/goto-line-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/help-dialog/help-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/help-dialog/help.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/html-entities-dialog/html-entities-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/html-entities-dialog/html-entities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/image-dialog/image-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/link-dialog/link-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/plugin-template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/preformatted-text-dialog/preformatted-text-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/reference-link-dialog/reference-link-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/table-dialog/table-dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/plugins/test-plugin/test-plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.codemirror.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.dialog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.logo.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.preview.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.preview.themes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.tab.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/editormd.themes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/github-markdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/lib/prefixes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/lib/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/scss/prettify.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/src/editormd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/bootstrap-test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/codemirror-searchbox-test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/codemirror-test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/js/searchbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/katex-tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/marked-@at-test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/marked-emoji-test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/marked-heading-link-test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/marked-todo-list-test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/qunit/qunit-1.16.0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editermd/tests/qunit/qunit-1.16.0.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/custom.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/switcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/switcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zsj/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zsj/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/blog/allBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/blog/allBlog.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/blog/showBlog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/blog/showBlog.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/classes/com/zsj/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/WEB-INF/pages/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/WEB-INF/pages/regist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/z/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/javascript/custom.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/z/javascript/customFuc.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/javascript/customFuc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/z/javascript/loadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/javascript/loadPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/javascript/switcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/javascript/switcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/z/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/z/test.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,12 +581,13 @@
     <session id="-529207384">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="44" />
+          <entry key="project.closed" value="56" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.37" value="2" />
@@ -49,34 +596,38 @@
           <entry key="project.open.time.40" value="4" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="2" />
-          <entry key="project.open.time.43" value="3" />
-          <entry key="project.open.time.44" value="2" />
-          <entry key="project.open.time.45" value="2" />
+          <entry key="project.open.time.43" value="4" />
+          <entry key="project.open.time.44" value="3" />
+          <entry key="project.open.time.45" value="3" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="7" />
           <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.50" value="2" />
-          <entry key="project.open.time.51" value="2" />
+          <entry key="project.open.time.51" value="3" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.76" value="1" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.open.time.76" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="46" />
+          <entry key="project.opened" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="7" />
+          <entry key="css" value="11" />
           <entry key="custom" value="1" />
-          <entry key="html" value="5" />
+          <entry key="html" value="7" />
           <entry key="iml" value="1" />
-          <entry key="java" value="233" />
+          <entry key="java" value="245" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="86" />
-          <entry key="jsp" value="190" />
-          <entry key="md" value="11" />
-          <entry key="png" value="5" />
+          <entry key="js" value="97" />
+          <entry key="jsp" value="222" />
+          <entry key="log" value="1" />
+          <entry key="md" value="16" />
+          <entry key="png" value="6" />
           <entry key="properties" value="2" />
           <entry key="txt" value="1" />
           <entry key="xml" value="15" />
@@ -84,15 +635,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="7" />
-          <entry key="HTML" value="5" />
+          <entry key="CSS" value="11" />
+          <entry key="HTML" value="7" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="6" />
-          <entry key="JAVA" value="233" />
-          <entry key="JSP" value="190" />
-          <entry key="JavaScript" value="86" />
-          <entry key="Markdown" value="11" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Image" value="7" />
+          <entry key="JAVA" value="245" />
+          <entry key="JSP" value="222" />
+          <entry key="JavaScript" value="97" />
+          <entry key="Markdown" value="16" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="2" />
           <entry key="TypeScript" value="1" />
           <entry key="XML" value="15" />
@@ -100,25 +651,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="37" />
+          <entry key="css" value="317" />
           <entry key="dummy" value="18" />
-          <entry key="html" value="9" />
-          <entry key="java" value="16840" />
-          <entry key="js" value="1598" />
-          <entry key="jsp" value="24287" />
-          <entry key="md" value="1819" />
+          <entry key="html" value="17" />
+          <entry key="java" value="17423" />
+          <entry key="js" value="2407" />
+          <entry key="jsp" value="27964" />
+          <entry key="md" value="2455" />
+          <entry key="txt" value="50" />
           <entry key="xml" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="37" />
-          <entry key="HTML" value="12" />
-          <entry key="JAVA" value="16840" />
-          <entry key="JSP" value="24284" />
-          <entry key="JavaScript" value="1598" />
-          <entry key="Markdown" value="1819" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="CSS" value="317" />
+          <entry key="HTML" value="20" />
+          <entry key="JAVA" value="17423" />
+          <entry key="JSP" value="27961" />
+          <entry key="JavaScript" value="2407" />
+          <entry key="Markdown" value="2455" />
+          <entry key="PLAIN_TEXT" value="68" />
           <entry key="XML" value="101" />
         </counts>
       </usages-collector>
@@ -132,86 +684,111 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14730">
-              <caret line="491" column="46" selection-start-line="491" selection-start-column="46" selection-end-line="491" selection-end-column="46" />
+            <state relative-caret-position="630">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interest.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lifelogging/motto.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2905">
+              <caret line="119" column="43" selection-start-line="119" selection-start-column="43" selection-end-line="119" selection-end-column="43" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/course3.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/testAddHeaderAndFooter.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" selection-end-line="841" selection-end-column="7" />
+            <state relative-caret-position="330">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/TestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/infocenter/infocenter.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="354" column="54" lean-forward="true" selection-start-line="354" selection-start-column="54" selection-end-line="354" selection-end-column="54" />
+              <folding>
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="391" column="23" lean-forward="true" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
+              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1737">
+              <caret line="774" column="26" selection-start-line="774" selection-start-column="26" selection-end-line="774" selection-end-column="26" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/footer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3870">
-              <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding>
-                <element signature="e#3602#3603#0" expanded="true" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/load.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5760">
-              <caret line="192" column="34" selection-start-line="192" selection-start-column="34" selection-end-line="192" selection-end-column="34" />
+            <state relative-caret-position="3180">
+              <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/newAdd/main.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/main.css">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -223,22 +800,13 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
         <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>revolution/</find>
-      <find>data-ret</find>
-      <find>btn-sub</find>
-      <find>images/</find>
-      <find>grid-</find>
-      <find>-grid</find>
-      <find>data-re</find>
-      <find>登录</find>
-      <find>${pageContext.request.contextPath}</find>
-      <find>pages/</find>
       <find>pagination-wrap</find>
       <find>textar</find>
       <find>course-img-box</find>
@@ -259,6 +827,16 @@
       <find>list</find>
       <find>price</find>
       <find>show-table</find>
+      <find>images/</find>
+      <find>stylesheets/</find>
+      <find>way</find>
+      <find>headerFixed</find>
+      <find>inViewport</find>
+      <find>timeline__item__content__date</find>
+      <find>h2</find>
+      <find>arc</find>
+      <find>wrapper</find>
+      <find>.switch-down</find>
     </findStrings>
     <replaceStrings>
       <replace>../</replace>
@@ -266,6 +844,9 @@
       <replace>z-learn</replace>
       <replace>question</replace>
       <replace>/z</replace>
+      <replace>/images/</replace>
+      <replace>${pageContext.request.contextPath}/stylesheets/</replace>
+      <replace>load-arc</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -274,28 +855,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/exception/SysException.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/test.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/error/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/test/com/zsj/web/TestSpring.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/problem.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/enums/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/domain/PageBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/domain/Problem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/exception/resolver/SysExceptionResolver.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/question/editQuestion.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/response/ResponseUploadImages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/enums/Status.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/response/ResponseCheckLogin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/domain/QuestionTags.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/zsj/insertdata/Question.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/domain/question/QuestionType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/dao/provider/QuestionProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/javascript/switcher.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/test.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/domain/question/QuestionTags.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/domain/question/QuestionClassify.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/domain/question/Problem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/service/QuestionService.java" />
@@ -319,12 +878,34 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/LanguageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp" />
-        <option value="$PROJECT_DIR$/exploitLog.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/regist.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/javascript/switcher.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/allBlog.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/demo.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/stylesheets/responsive.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/load.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/load.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/demo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/onlineMusic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/test/onlineMusicOnIndex.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/player.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/test.jsp" />
+        <option value="$PROJECT_DIR$/exploitLog.md" />
+        <option value="$PROJECT_DIR$/src/main/webapp/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lifelogging/motto.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/testAddHeaderAndFooter.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/infocenter/infocenter.jsp" />
       </list>
     </option>
   </component>
@@ -354,17 +935,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/src/main/webapp/editermd/lib/codemirror/package.json" />
-      <path value="$PROJECT_DIR$/src/main/webapp/editermd/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="243" />
-    <option name="y" value="127" />
-    <option name="width" value="1520" />
-    <option name="height" value="886" />
+    <option name="x" value="191" />
+    <option name="y" value="48" />
+    <option name="width" value="1700" />
+    <option name="height" value="964" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -374,8 +949,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -436,60 +1011,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zsj" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zsj" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zsj" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zsj" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zsj" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zsj" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="z" type="b2602c69:ProjectViewProjectNode" />
@@ -511,32 +1033,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="newAdd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="z" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="z" type="b2602c69:ProjectViewProjectNode" />
@@ -553,7 +1050,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="infocenter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="z" type="b2602c69:ProjectViewProjectNode" />
+              <item name="z" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lifelogging" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="z" type="b2602c69:ProjectViewProjectNode" />
@@ -583,23 +1089,24 @@
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575368150066" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589366393806" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../javaCode/DatabaseDeal/.idea" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/my-site-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\stylesheets\newAdd" />
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\javascript\newAdd" />
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images\problem" />
-      <recent name="D:\Java\Project\zlearn\z" />
-      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images\error" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\WEB-INF\lifelogging" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\WEB-INF\template" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\js" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\WEB-INF\test" />
+      <recent name="D:\Java\Project\zlearn\z\src\main\webapp\images\onlineMusic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zsj.dao.provider" />
@@ -703,7 +1210,10 @@
     </configuration>
     <configuration name="z" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="z:war exploded">
           <settings>
@@ -848,8 +1358,28 @@
       <workItem from="1576229858013" duration="296000" />
       <workItem from="1576233247863" duration="1945000" />
       <workItem from="1576292397490" duration="34000" />
-      <workItem from="1576326854426" duration="664000" />
+      <workItem from="1576326854426" duration="4407000" />
+      <workItem from="1576564553248" duration="1198000" />
+      <workItem from="1577773394725" duration="42000" />
+      <workItem from="1578819447629" duration="5816000" />
+      <workItem from="1578981600904" duration="10539000" />
+      <workItem from="1581038711114" duration="9826000" />
+      <workItem from="1581130663093" duration="600000" />
+      <workItem from="1581216074321" duration="18949000" />
+      <workItem from="1581255548659" duration="1838000" />
+      <workItem from="1582256570442" duration="125000" />
+      <workItem from="1583638626241" duration="2688000" />
+      <workItem from="1583716373406" duration="2421000" />
+      <workItem from="1589363735598" duration="2271000" />
     </task>
+    <task id="LOCAL-00001" summary="框架改变，由之前的个人博客兼学习网站改变为个人网站，博客系统则成为个人网站的一部分。">
+      <created>1576327656832</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576327656832</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -885,10 +1415,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305602000" />
+    <option name="totallyTimeSpent" value="365658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="243" y="127" width="1520" height="886" extended-state="0" />
+    <frame x="191" y="48" width="1700" height="964" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -897,24 +1427,28 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" sideWeight="0.5016234" side_tool="true" weight="0.14897467" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49837664" visible="true" weight="0.15410958" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49837664" visible="true" weight="0.21158537" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Tail" />
+      <window_info anchor="bottom" id="MyBatis Log" />
+      <window_info anchor="bottom" id="Statistic" />
       <window_info anchor="bottom" id="TypeScript" order="0" weight="0.3295838" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32925472" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32925472" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.32925472" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.19243604" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.17888199" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.23248054" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.29922137" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.2986536" />
       <window_info anchor="bottom" id="Message" order="9" />
-      <window_info anchor="bottom" id="Find" order="10" visible="true" weight="0.22604422" />
-      <window_info active="true" anchor="bottom" id="Run" order="11" visible="true" weight="0.2276964" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.22604422" />
+      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.3474065" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.49694002" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info anchor="right" id="RestServices" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="right" id="Database" order="2" />
@@ -942,6 +1476,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="框架改变，由之前的个人博客兼学习网站改变为个人网站，博客系统则成为个人网站的一部分。" />
+    <option name="LAST_COMMIT_MESSAGE" value="框架改变，由之前的个人博客兼学习网站改变为个人网站，博客系统则成为个人网站的一部分。" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -951,213 +1489,16 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/header.jsp</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/waypoints.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/domain/question/QuestionTags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/write.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7830">
-          <caret line="261" column="48" selection-start-line="261" selection-start-column="48" selection-end-line="261" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/domain/question/QuestionClassify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/service/QuestionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/service/impl/QuestionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3150">
-          <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectDesign.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1530">
-            <caret line="51" selection-start-line="51" selection-end-line="51" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/showBlog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/QuestionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="81" column="57" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/dao/QuestionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3660">
-          <caret line="133" column="17" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/service/impl/BlogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/zsj/test/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="18" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/zsj/test/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/service/LanguageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="97" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/domain/PageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/BlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="84" column="48" selection-start-line="84" selection-start-column="48" selection-end-line="84" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/domain/question/Problem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="56" column="68" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/zsj/test/Useless.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/dao/BlogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="65" column="34" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/domain/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/dao/LanguageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/service/impl/LanguageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="93" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/dao/provider/QuestionProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ApplicationConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/druid.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1175,36 +1516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/question/allQuestion.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#42447#47888#0#HTML" />
-            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exploitLog.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="840">
-            <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/question.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1215,51 +1526,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/switcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="96" column="37" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="37" />
-          <folding>
-            <element signature="e#263#269#1" expanded="true" />
-            <element signature="e#348#354#1" expanded="true" />
-            <element signature="e#433#439#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/custom.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-740">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/course.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2880">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#9926#10654#0" />
-            <element signature="e#10703#10876#0" />
-            <element signature="e#10915#12525#0" />
-            <element signature="e#12561#13323#0" />
-            <element signature="e#13361#15214#0" />
-            <element signature="e#15247#16486#0" />
-            <element signature="e#16537#17283#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14730">
-          <caret line="491" column="46" selection-start-line="491" selection-start-column="46" selection-end-line="491" selection-end-column="46" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/interest.jsp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1271,23 +1540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3870">
-          <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
-          <folding>
-            <element signature="e#3602#3603#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5760">
-          <caret line="192" column="34" selection-start-line="192" selection-start-column="34" selection-end-line="192" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/loadPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1295,26 +1547,277 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseAddResource.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2070">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/language.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="491" column="46" selection-start-line="491" selection-start-column="46" selection-end-line="491" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/switcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1517">
+          <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/newAdd/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/main.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/imagesloaded.min.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/blog/allBlog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14340">
+          <caret line="478" column="24" selection-start-line="478" selection-start-column="24" selection-end-line="487" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/docs.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="81" column="57" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/favicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8850">
+          <caret line="295" column="27" selection-start-line="295" selection-start-column="17" selection-end-line="295" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/question/allQuestion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/BlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="77" column="17" lean-forward="true" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/axis.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7359" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectDesign.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="206">
+            <caret line="51" selection-start-line="51" selection-end-line="51" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/player.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/stylesheets/newAdd/load.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4170">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascript/customFuc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16740">
+          <caret line="558" column="93" selection-start-line="558" selection-start-column="70" selection-end-line="558" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/test/onlineMusic.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/test/header.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/test/demo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/test/onlineMusicOnIndex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23910">
+          <caret line="797" selection-start-line="795" selection-start-column="8" selection-end-line="797" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4230">
+          <caret line="167" column="14" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exploitLog.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1680">
+            <caret line="56" selection-start-line="56" selection-end-line="56" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/load.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3180">
+          <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zsj/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/testAddHeaderAndFooter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="391" column="23" lean-forward="true" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
+        <state relative-caret-position="1737">
+          <caret line="774" column="26" selection-start-line="774" selection-start-column="26" selection-end-line="774" selection-end-column="26" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lifelogging/motto.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2905">
+          <caret line="119" column="43" selection-start-line="119" selection-start-column="43" selection-end-line="119" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/infocenter/infocenter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="354" column="54" lean-forward="true" selection-start-line="354" selection-start-column="54" selection-end-line="354" selection-end-column="54" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

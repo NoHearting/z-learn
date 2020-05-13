@@ -18,12 +18,10 @@
 
 
 	<style type="text/css">
-		.sex{    
-			/*美化单选框*/
-			display:inline-block;
-			width:150px;
-			position:relative;
-			color:white;
+		.inline-radio{
+			width:30%;
+			text-align: center;
+
 		}
 		#registerForm input[type="password"]{
 			background: rgba(114,125,135,0.3);
@@ -85,40 +83,40 @@
 
 <body>
 	<div class="top border-bt-d1d1ff style2">
-	<div class="overlay"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-12">
-				<div class="flat-info">
-					<ul>
-						<li class="phone"><a href="#" id="ttt">15086998051</a></li>
-						<li class="mail"><a href="#">313434726@qq.com</a></li>
-					</ul>
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+					<div class="flat-info">
+						<ul>
+							<li class="phone"><a href="#" id="ttt">15086998051</a></li>
+							<li class="mail"><a href="#">313434726@qq.com</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-8 col-md-12 pd-left-0">
-				<div class="flat-adds flat-text-right">
-					<p>
-						<span class="font-Roboto font-weight-700 underline-text"></span>
-						<span class="font-Hall font-weight-700 letter-spaceing-top">Only By Learn</span>
-						<span class="font-Playfair font-weight-700 letter-spaceing-top"></span>
-					</p>
-					<p class="font-weight-700 datetime" id="loginStatus">未登录</p>
-				</div>
-				<div class="flat-action flat-text-right style1">
-					<ul>
-						<li><a href="${pageContext.request.contextPath}/pages/regist">注册</a></li>
-						<li><a href="${pageContext.request.contextPath}/pages/login">登录</a></li>
-					</ul>
+				<div class="col-lg-8 col-md-12 pd-left-0">
+					<div class="flat-adds flat-text-right">
+						<p>
+							<span class="font-Roboto font-weight-700 underline-text"></span>
+							<span class="font-Hall font-weight-700 letter-spaceing-top">Only By Learn</span>
+							<span class="font-Playfair font-weight-700 letter-spaceing-top"></span>
+						</p>
+						<p class="font-weight-700 datetime" id="loginStatus">未登录</p>
+					</div>
+					<div class="flat-action flat-text-right style1">
+						<ul>
+							<li><a href="${pageContext.request.contextPath}/pages/regist">注册</a></li>
+							<li><a href="${pageContext.request.contextPath}/pages/login">登录</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 	</div>
 
 	<div id="header" class="bg-fff style1">
-	<div class="container">
+		<div class="container">
 		<div class="header-wrap clearfix">
 			<div id="logo">
 				<a href="${pageContext.request.contextPath}/pages/index"><img src="${pageContext.request.contextPath}/images/logo/logo.png" alt="bookflare" width="157" height="29" ></a>
@@ -201,7 +199,7 @@
 			</div>
 		</div>
 	</div>
-</div> <!-- #header -->
+	</div>
 	<section class="flat-register-now">
 		<div class="overlay"></div>
 		<div class="container">
@@ -233,14 +231,15 @@
 								<input type="password" name="sure-password" placeholder="确认密码">
 							</div>
 							<div class="wrap-input">
-		                        <label class="sex">
-		                            <input class="sex-gap" name="gender" type="radio" value="男" checked="checked"/>
-		                            <span>男</span>
-		                        </label>
-		                        <label class="sex">
-		                            <input class="sex-gap" name="gender" type="radio" value="女" />
-		                            <span>女</span>
-		                        </label>
+
+									<label class="inline-radio ">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="男"> 男
+									</label>
+									<label class="inline-radio">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="女"> 女
+									</label>
+
+
                     		</div>
 
 							<div class="wrap-btn">
